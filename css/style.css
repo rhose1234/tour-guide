@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+
+}
+/* desktop navigation bar starts */
+nav.desktop-nav{
+    width: 100%;
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: transparent; */
+    padding: 20px 100px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    z-index: 10;
+    position: fixed;
+}
+#logo{
+    /* width: 20%; */
+}
+#logo img{
+    width: 170px;
+}
+#link-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 80px;
+}
+#link-wrapper li{
+    list-style: none;
+    
+}
+#link-wrapper li a{
+    margin-left: 50px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+#signin-btn button{
+    padding: 14px 30px;
+    border: none;
+    background-color: #FFDA32;
+    border-radius: 5px;
+    font-weight: 700;
+    
+
+}
+ nav.mobile-navigation{
+    display: none;
+ }
+
+/* hero section styles */
+
+.hero_Section.video_background{
+   position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+  
+}
+.video_background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  z-index: -1;
+}
+.video_background video{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+ 
+}
+
+.hero-content{
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: #ffffff;
+  z-index: 9;
+  margin-top: 30px;
+  
+}
+.hero-content h1{
+    font-size: 45px;
+    margin-top: 30px;
+}
+.hero-content p{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 200;
+}
+.hero-content .hero-btn{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.hero-btn .third-layer{
+    background-color: #ffffff;
+    border-radius: 48%;
+    padding: 10px 13px;
+}
+.hero-btn .second-layer{
+    background-color: #a1a0a03a;
+    padding: 8px;
+    border-radius: 50%;
+}
+.hero-btn .first-layer{
+    background-color: #a1a0a03a;
+    padding: 8px;
+    border-radius: 50%;
+}
+.hero-btn i{
+    color: #7BBCB0;
+    font-size: 20px;
+}
+.hero-btn h5{
+    font-weight: 600;
+    font-size: 20px;
+}
+/* 
+ mobile device styling */
+@media (max-width : 600px) {
+
+    /* mobile navigation starts */
+     nav.desktop-nav{
+        display: none;
+     }
+     nav.mobile-navigation{
+        display: flex;
+        flex-direction: column;
+     }
+    .mobile-nav{
+        width: 100%;
+       display: flex;
+       justify-content: space-between;
+       flex-direction: row;
+       background-color: none;
+       padding: 20px 30px;
+       /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+       z-index: 10;
+    }
+    .mobile-nav #hamburger{
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .mobileList {
+        background-color: white; 
+        display: none;      
+          
+    }
+    .mobileList.show{
+        height: 80vh;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        transform: scaleX(100%);
+        margin: 0px 30px 30px 0px;
+        z-index: 10;
+        
+        
+    }
+     .mobileList li{
+        margin-top: 40px;
+        text-align: center;
+        color: #000000;
+
+        
+     }
+     .mobilenav_Link{
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        font-size: 15px;
+     }
+     #signin-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+     }
+     #signin-btn button{
+    padding: 14px 30px;
+    border: none;
+    background-color: #FFDA32;
+    color: #000000;
+    border-radius: 5px;
+    font-weight: 800;
+     }
+/* hero section for mobile */
+.hero-content{
+   position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: #ffffff;
+  z-index: 9;
+  margin-top: 30px;
+  width: 300px;
+  
+}
+.hero-content h1{
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.hero-content .hero-btn{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+/* tablet screen styling */
+}
+@media (min-width: 601px) and (max-width: 1200px) {
+    nav.desktop-nav{
+    display: none;
+   
+}
+/* Tablet navigation starts */
+     nav.desktop-nav{
+        display: none;
+     }
+     nav.mobile-navigation{
+        display: flex;
+        flex-direction: column;
+     }
+    .mobile-nav{
+        width: 100%;
+       display: flex;
+       justify-content: space-between;
+       flex-direction: row;
+       background-color: none;
+       padding: 20px 30px;
+       /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+       z-index: 10;
+    }
+    .mobile-nav #hamburger{
+        color: #ffffff;
+        font-size: 20px;
+    }
+    .mobileList {
+        background-color: white; 
+        display: none;      
+          
+    }
+    .mobileList.show{
+        height: 80vh;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        transform: scaleX(100%);
+        margin: 0px 30px 30px 0px;
+        z-index: 10;
+
+        
+        
+    }
+     .mobileList li{
+        margin-top: 40px;
+        text-align: center;
+        color: #000000;
+
+        
+     }
+     .mobilenav_Link{
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+        font-size: 15px;
+     }
+     #signin-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+     }
+     #signin-btn button{
+    padding: 14px 30px;
+    border: none;
+    background-color: #FFDA32;
+    color: #000000;
+    border-radius: 5px;
+    font-weight: 800;
+     }
+/* Tablet navigation ends */
+}
