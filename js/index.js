@@ -19,4 +19,20 @@ const video = document.querySelector("#bg-video")
 const playbtn = document.querySelector("#playbtn")
 playbtn.addEventListener("click", () => {
         video.play()
-    })
+})
+
+
+const smallCircles = document.querySelector(".small-circles")
+const boxItems = ["New York", "Carlifonia", "Alaska", "Sidney", "Dubia", "London", "Tokyo", "Dehli"]
+
+boxItems.forEach((city) => {
+
+   const itemBox  = document.createElement("p")
+    itemBox.classList.add("item-box")
+    itemBox.textContent = city
+
+    
+    smallCircles.appendChild(itemBox)
+    
+    
+})
