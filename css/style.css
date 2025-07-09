@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 *{
     margin: 0;
@@ -19,6 +19,11 @@ nav.desktop-nav{
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     z-index: 10;
     position: fixed;
+}
+.nav-scrolled{
+    background-color: #000000ad;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    z-index: 9;
 }
 #logo{
     /* width: 20%; */
@@ -58,7 +63,7 @@ nav.desktop-nav{
 
 /* hero section styles */
 .hero_Section{
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 .hero_Section .video_background{
   position: relative;
@@ -92,7 +97,7 @@ nav.desktop-nav{
 
 .hero-content{
    position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%); 
   text-align: center;
@@ -143,7 +148,7 @@ nav.desktop-nav{
 }
 .box{
     position: absolute;
-    bottom: -10%;
+    bottom: 3%;
     display: flex;
     justify-content: space-between;
     left: 10% ;
@@ -204,6 +209,7 @@ nav.desktop-nav{
 .second-section{
     height: auto;
     width: 100%;
+    margin-bottom: 120px;
 }
 .second-section h1{
     text-align: center;
@@ -236,9 +242,502 @@ nav.desktop-nav{
     background-color: #7BBCB0;
     color: #ffffff ;
 }
+.alaska{
+    position: relative;
+}
+.alaska img{
+      padding: 30px 100px;
+      width: 100%;
+      
 
+}
+.alaska-container{
+    background-color: hsl(200, 100%, 99%);
+    margin: 0px 120px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 70px 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 50px;
+    width: auto;
+    position: absolute;
+   bottom: -10%;
+}
+.first-alaska{
+    width: 50%;
+     text-align: left;
+}
+.first-alaska h1{
+    text-align: left;
+}
+.first-alaska p{
+    text-align: left;
+}
+.second-alaska .featurerow1, .featurerow2{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+}
+.feature1{
+    color: #D176E0;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 7px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 10px;
+    width: 60%;
 
+}
+.feature2{
+    color: #7BBCB0;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 20px;
 
+}
+.feature3{
+    color: #E4B613;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 20px;
+
+}
+.feature4{
+    color: #FC3131;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 20px;
+
+}
+.feature5{
+    color: #5C9BDE;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 20px;
+
+}
+#sectionCard{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 18px;
+    padding: 30px 100px;
+    width: 100%;
+}
+#sectionCard .card{
+    background-color: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#sectionCard .cardImage{
+    width: 100%;
+    padding: 10px;
+    
+}
+#sectionCard .cardHeading{
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.iconText {
+    color: #495560;
+     padding: 10px 20px 25px 25px;
+     border-bottom: 1px solid #495560;
+}
+.iconText .timeDiv, .movementDiv, .personDiv{
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.ratingSection{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px 25px 25px;
+
+}
+.ratingSection p{
+    font-size: 15px;
+    color: #778088;
+    margin-top: 5px;
+}
+.ratePrice{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+      margin-top: 10px;
+    padding: 10px 20px 25px 25px;
+}
+.rateDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.ratingDiv{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3px;
+    flex-direction: row;
+    align-items: center;
+    color: #495560;
+
+}
+.cardPrice{
+    color: #7BBCB0;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Volkhov", serif;
+}
+
+.wilderLife{
+    background-image: url("../assets/images/wilderalaska.png");
+    padding: 30px 40px;
+     background-repeat: no-repeat;
+    background-position: cover;
+    background-size: contain;
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+}
+.trending h5{
+    background-color: #AFFFF0;
+    color: #1C2B38;
+    font-weight: 800;
+    padding: 8px 15px;
+    border-radius: 50px;
+    width: 150px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0px;
+
+}
+.trending h1{
+    font-weight: 500;
+    color: #FFFFFF;
+    font-family: "Volkhov", serif;
+    font-size: 40px;
+}
+.wilderlifeDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.wilderLife img{
+    width: 500px;
+   
+}
+
+.locationDot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin: 18px 0px;
+}
+.locationRating{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+.locationRating p span{
+    font-weight: 800;
+}
+.ratingStar{
+    color: #FFA432;
+    gap: 10px;
+  
+
+}
+.wilderlife-description{
+    font-size: 16px;
+    color: #ffffff;
+}
+.booking{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 40px;
+}
+.booking button{
+    background-color: #FFDA32;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 800;
+    box-shadow: rgb(248, 244, 5) 0px 20px 30px -10px;
+    
+}
+.booking .icons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    color: #ffffff;
+}
+.booking .icons i{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#featured .featured-destination{
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+}
+.featured-destination h1{
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.featured-destination p{
+    font-size: 16px;
+    margin-top: 15px;
+    width: 500px;
+    color: #778088;
+}
+.featured-destination .icons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+
+}
+.featured-destination .icons i:first-child{
+    background-color: #ffffff;
+    padding: 16px 20px;
+    color: black;
+    border: 1px solid #FFDA32;
+    box-shadow: rgb(248, 244, 5) 0px 20px 30px -10px;
+    border-radius: 50%;
+    
+
+}
+.featured-destination .icons i:last-child{
+    background-color: #FFDA32;
+    padding: 16px 20px;
+    color: black;
+    border: none;
+    box-shadow: rgb(248, 244, 5) 0px 20px 30px -10px;
+    border-radius: 50%;
+}
+
+#sectionCard2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 18px;
+    padding: 30px 100px;
+    width: 100%;
+}
+#sectionCard2 .card{
+    background-color: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#sectionCard2 .cardImage{
+    width: 100%;
+    padding: 10px;
+    
+}
+#sectionCard2 .cardHeading{
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.smartCity{
+    background: url("../assets/images/smart.png");
+    padding: 50px 100px;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: contain;
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+.smartCity-img{
+    width: 400px;
+}
+.smartCityDiv{
+    color: #ffffff;
+}
+.smartCityDiv h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.smartCityDiv h5{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.smartCityDiv p{
+    margin-bottom: 20px;
+}
+.smartCityDiv .smartButtons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;  
+    gap: 20px;
+    /* padding: 10px 40px;  */
+    
+}
+.smartButtons .btn1, .btn2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 15px 30px;
+    background-color: #FFDA32;
+    color: #000000;
+    font-weight: bold;
+    box-shadow: rgb(248, 244, 5) 0px 20px 30px -10px;
+    border: none;
+    border-radius: 50px;
+}
+#gallery{
+      padding: 30px 100px;
+}
+#gallery .galleryInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.galleryInfo .galleryText{
+    width: 500px;
+}
+.galleryText h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.galleryText p{
+    color: #778088;
+}
+.galleryInfo .galleryBtn button{
+    padding: 10px 30px;
+    color: #ffffff;
+    background-color: #495560;
+    border: none;
+}
+.galleryPictures{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.galleryPictures img{
+    width: 280px;
+    margin-top: 20px;
+    
+
+}
+#stories{
+     padding: 30px 100px;
+}
+#stories .storyInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.storyInfo .storyText{
+    width: 500px;
+}
+.storyInfo h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.storyInfo p{
+    color: #778088;
+}
+.storyInfo .storyBtn button{
+    padding: 10px 30px;
+    color: #ffffff;
+    background-color: #495560;
+    border: none;
+}
+#post{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 40px;
+}
+#post .blogCard{
+    background: none;
+}
+#post .blogImage{
+    width: 100%;
+
+}
+#post .blogHeading{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#post .authorDiv{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
 /* 
  mobile device styling */
 @media (max-width : 600px) {
@@ -250,18 +749,20 @@ nav.desktop-nav{
      nav.mobile-navigation{
         display: flex;
         flex-direction: column;
+        /* position: relative; */
 
      }
     .mobile-nav{
+        /* position: relative; */
        width: 100%;
        display: flex;
        justify-content: space-between;
        flex-direction: row;
        position: fixed;
-       background-color: transparent;
+       background-color: none;
        padding: 20px 30px;
        /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-       z-index: 10;
+       z-index: 8;
     }
     .mobile-nav #hamburger{
         color: #ffffff;
@@ -274,7 +775,7 @@ nav.desktop-nav{
           
     }
     .mobileList.show{
-        position: relative;
+        /* position: relative; */
         height: 100vh;
         width: 100%; 
         display: flex;
@@ -315,24 +816,25 @@ nav.desktop-nav{
     font-weight: 800;
      }
      .hero_Section{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    height: 100vh;
 }
 /* hero section for mobile */
 .hero-content{
    position: absolute;
-  top: 40%;
+  top: 29%;
   left: 50%;
   transform: translate(-50%, -50%); 
   text-align: center;
   color: #ffffff;
-  z-index: 9;
+  z-index: 4;
   margin-top: 30px;
   width: 300px;
   
 }
 .hero-content h1{
     font-size: 35px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .hero-content .hero-btn{
@@ -344,7 +846,19 @@ nav.desktop-nav{
     gap: 10px;
 }
 .box{
-    display: none;
+    position: absolute;
+    bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 10% ;
+    background-color: #ffffff ;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+    gap: 20px;
+    width: 80%;
 }
 .second-section{
   
@@ -364,7 +878,89 @@ nav.desktop-nav{
     margin: 30px 120px;
     gap: 5px;
 }
+.alaska{
+    position: relative;
+}
+.alaska img{
+      padding: 30px 10px;
+      width: 100%;
+      
 
+}
+.alaska-container{
+    background-color: hsl(200, 100%, 99%);
+    margin: 0px 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 70px 50px;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    bottom: 0%;
+}
+.first-alaska{
+    width: 100%;
+    
+}
+.first-alaska h1{
+    text-align: start;
+}
+.first-alaska p{
+    margin-bottom: 10px;
+}
+
+#sectionCard{
+   
+    flex-direction: column;
+    padding: 30px 50px;
+   
+}
+.wilderlifeDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.wilderLife img{
+display: none;   
+}
+#featured .featured-destination{
+    flex-direction: column;
+    padding: 20px 90px;
+}
+#sectionCard2{
+    flex-direction: column;
+    padding: 30px 50px;
+}
+.featured-destination h1{
+    font-weight: 800;
+
+}
+.featured-destination p{
+    width: 300px;
+}
+.trending h1{
+    font-size: 32px;
+}
+.trending h5{
+    padding: 4px 15px;
+    font-size: 14px;
+    margin: 5px  5px 0px 0px;
+}
+.locationRating{
+    font-size: 13px;
+}
+.booking{
+    margin-top: 10px;
+
+}
+.wilderlife-description{
+    display: none;
+}
 
 /* tablet screen styling */
 }
@@ -441,7 +1037,62 @@ nav.desktop-nav{
     font-weight: 800;
      }
      .box{
-        display: none;
-     }
+    position: absolute;
+    bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left:5% ;
+    background-color: #ffffff ;
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 10;
+    gap: 10px;
+    width: 90%;
+}
+.hero-content{
+   position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: #ffffff;
+  z-index: 4;
+  margin-top: 30px;
+  width: 80%;
+}
+.hero-content h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.second-section{
+  
+    padding: 10px 20px;
+}
+.second-section h1{
+    
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1C2B38;
+}
+
+.small-circles{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 30px 5px;
+    gap: 5px;
+}
+.alaska{
+    position: relative;
+}
+.alaska img{
+      padding: 30px 10px;
+      width: 100%;
+      
+
+}
 /* Tablet navigation ends */
 }
