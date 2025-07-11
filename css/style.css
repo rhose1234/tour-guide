@@ -116,7 +116,7 @@ nav.desktop-nav{
     font-weight: 200;
 }
 .hero-content .hero-btn{
-    margin-top: 8px;
+    margin-top: 7px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -738,9 +738,94 @@ nav.desktop-nav{
     gap: 10px;
     margin-top: 20px;
 }
+footer{
+    background-color: #13253F;
+    margin-top: 30px;
+    
+}
+.footerDiv{
+    padding: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+}
+.footerDiv .div1 select{
+    margin-bottom: 20px;
+    width: 85%;
+    height: 45px;
+    padding: 0px 15px;
+    outline: none;
+    border: 1px solid #495560;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.footerDiv .div1 label{
+    font-size: 16px;
+    color: #ffffff8c;
+    margin-bottom: 20px;
+}
+.footerDiv .div2 a, .div3 a, .div4 a{
+    text-decoration: none;
+    color: #ffffff8c;
+    font-size: 14px;
+}
+.footerDiv .div2 h5, .div3 h5, .div4 h5{
+   font-size: 16px;
+   margin-bottom: 5px;
+   color: #ffffff8c;
+   
+}
+.footerDiv .div2, .div3{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    color: #ffffff8c;
+    gap: 10px;
+}
+.footerDiv .div4 .payment_options {
+    margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footerDiv .div4 .payment_options img {
+  flex: 0 1 calc(20% - 10px);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  width: 15px;
+}
+.copyright{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff8c;
+    font-size: 13px;
+}
+.copyright .social_Icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+.copyright .social_Icons img{
+    width: 30px;
+}
+
+
+
 /* 
  mobile device styling */
-@media (max-width : 600px) {
+@media (min-width: 360px) and (max-width: 480px)  {
 
     /* mobile navigation starts */
      nav.desktop-nav{
@@ -784,8 +869,6 @@ nav.desktop-nav{
         transform: scaleX(100%);
         margin: 0px 30px 30px 0px;
         z-index: 2;
-        
-        
     }
      .mobileList li{
         margin-top: 40px;
@@ -816,7 +899,7 @@ nav.desktop-nav{
     font-weight: 800;
      }
      .hero_Section{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     height: 100vh;
 }
 /* hero section for mobile */
@@ -828,7 +911,7 @@ nav.desktop-nav{
   text-align: center;
   color: #ffffff;
   z-index: 4;
-  margin-top: 30px;
+  margin-top: 60px;
   width: 300px;
   
 }
@@ -847,7 +930,7 @@ nav.desktop-nav{
 }
 .box{
     position: absolute;
-    bottom: 6%;
+    top: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -857,8 +940,9 @@ nav.desktop-nav{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 10;
-    gap: 20px;
+    gap: 10px;
     width: 80%;
+    font-size: 15px;
 }
 .second-section{
   
@@ -871,46 +955,64 @@ nav.desktop-nav{
     color: #1C2B38;
 }
 
-.small-circles{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 30px 120px;
-    gap: 5px;
+.small-circles {
+  display: flex;
+  flex-wrap: wrap; /* allows items to wrap to next line */
+  gap: 10px;
+  margin: 30px 30px;
+
 }
+
+.item-box {
+  flex: 0 1 calc(50% - 10px); /* 2 per row, accounting for gap */
+  background-color: #f0f0f0; /* optional styling */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 .alaska{
     position: relative;
+    margin-bottom: 300px;
+    margin-top: 50px;
 }
 .alaska img{
       padding: 30px 10px;
       width: 100%;
+      display: none;
       
 
 }
-.alaska-container{
-    background-color: hsl(200, 100%, 99%);
-    margin: 0px 50px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 70px 50px;
+.alaska .alaska-container{
+    background-color: transparent;
+    margin: 0px 10px;
+    box-shadow: none;
+    padding: 10px 10px;
     display: flex;
-    height: 100%;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     gap: 10px;
-    width: 80%;
+    width: 100%;
+    height: auto;
     position: absolute;
-    top: 20%;
-    bottom: 0%;
+    top: -20%;
 }
 .first-alaska{
     width: 100%;
-    
+     text-align: left;
 }
 .first-alaska h1{
-    text-align: start;
+    text-align: left;
 }
 .first-alaska p{
-    margin-bottom: 10px;
+    text-align: left;
+}
+.second-alaska .featurerow1, .featurerow2{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
 }
 
 #sectionCard{
@@ -961,10 +1063,37 @@ display: none;
 .wilderlife-description{
     display: none;
 }
+.smartCity{
+    flex-direction: column;
+     padding: 30px 50px;
+}
+.smartCity-img img{
+    width: 200px;
+    height: 200px;
+    
+}
+#post{
+    flex-direction: column;
+}
+footer{
+    width: 100%;
+}
+.footerDiv{
+    flex-direction: column;
+    gap: 50px;
 
+}
+.copyright{
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+    padding: 20px 0px ;
+
+}
 /* tablet screen styling */
 }
-@media (min-width: 601px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 991px) {
     nav.desktop-nav{
     display: none;
    

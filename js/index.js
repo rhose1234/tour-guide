@@ -37,6 +37,7 @@ boxItems.forEach((city) => {
     
 })
 
+
 window.onscroll = function () {
   const navbar = document.querySelector(".desktop-nav");
   const mobile = document.querySelector(".mobile-nav")
