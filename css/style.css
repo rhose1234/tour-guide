@@ -750,16 +750,36 @@ footer{
     flex-direction: row;
     gap: 10px;
 }
-.footerDiv .div1 select{
-    margin-bottom: 20px;
-    width: 85%;
-    height: 45px;
-    padding: 0px 15px;
-    outline: none;
-    border: 1px solid #495560;
-    border-radius: 10px;
-    margin-top: 10px;
+/* Main select styling */
+.footerDiv .div1 select {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 45px;
+  padding: 0px 15px;
+  outline: none;
+  border: 1px solid #495560;
+  border-radius: 10px;
+  margin-top: 10px;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  color:#ffffff8c; /* White text */
+  background-color: transparent;
+
+  background-image: url("data:image/svg+xml,%3Csvg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
 }
+
+/* Style placeholder only (does not affect other options) */
+.footerDiv .div1 select option:enabled {
+  color: #000000; 
+  background-color:white;
+}
+
 .footerDiv .div1 label{
     font-size: 16px;
     color: #ffffff8c;
@@ -822,11 +842,13 @@ footer{
 }
 
 
-
 /* 
  mobile device styling */
 @media (min-width: 360px) and (max-width: 480px)  {
 
+    body{
+        overflow-x: hidden;
+    }
     /* mobile navigation starts */
      nav.desktop-nav{
         display: none;
@@ -959,7 +981,7 @@ footer{
   display: flex;
   flex-wrap: wrap; /* allows items to wrap to next line */
   gap: 10px;
-  margin: 30px 30px;
+  margin: 30px 20px;
 
 }
 
@@ -972,21 +994,21 @@ footer{
 
 .alaska{
     position: relative;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     margin-top: 50px;
+    padding: 30px 0px;
 }
 .alaska img{
-      padding: 30px 10px;
-      width: 100%;
+     
       display: none;
       
 
 }
 .alaska .alaska-container{
     background-color: transparent;
-    margin: 0px 10px;
+    margin: 0px 0px;
     box-shadow: none;
-    padding: 10px 10px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -1018,69 +1040,214 @@ footer{
 #sectionCard{
    
     flex-direction: column;
-    padding: 30px 50px;
+    padding: 30px 30px;
+    gap: 40px;
    
 }
-.wilderlifeDiv{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+.wilderLife{
+    background-image: url("../assets/images/wilderalaska.png");
+    padding: 10px 20px;
+     background-repeat: no-repeat;
+    background-position: cover;
+    background-size: contain;
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
 }
-.wilderLife img{
-display: none;   
-}
-#featured .featured-destination{
-    flex-direction: column;
-    padding: 20px 90px;
-}
-#sectionCard2{
-    flex-direction: column;
-    padding: 30px 50px;
-}
-.featured-destination h1{
-    font-weight: 800;
+.wilderLife .trending h5{
+    
+    padding: 5px 10px;
+    width: 100px;
+    font-size: 9px;
+    margin: 5px 0px;
 
 }
-.featured-destination p{
-    width: 300px;
+.wilderLife .trending h1{
+    font-weight: 500;
+    color: #FFFFFF;
+    font-family: "Volkhov", serif;
+    font-size: 25px;
+    margin-top: 8px;
 }
-.trending h1{
-    font-size: 32px;
+.wilderlifeDiv{
+    flex-direction: column;
 }
-.trending h5{
-    padding: 4px 15px;
-    font-size: 14px;
-    margin: 5px  5px 0px 0px;
+.wilderLife img{
+   display: none;
+}
+
+.locationDot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin: 5px 0px;
 }
 .locationRating{
-    font-size: 13px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: #ffffff;
+    font-size: 14px;
 }
-.booking{
-    margin-top: 10px;
+.locationRating p span{
+    font-weight: 800;
+}
+.ratingStar{
+    color: #FFA432;
+    gap: 10px;
+  
 
 }
 .wilderlife-description{
     display: none;
 }
-.smartCity{
-    flex-direction: column;
-     padding: 30px 50px;
+.booking{
+    margin: 8px 0px;
 }
-.smartCity-img img{
-    width: 200px;
-    height: 200px;
+.booking button{
+    padding: 5px 40px;  
+}
+.booking .icons i{
+    padding: 8px 8px;
+    font-size: 10px;
+}
+#featured .featured-destination{
+    padding: 50px 20px;
+    display: block;
     
 }
-#post{
-    flex-direction: column;
+.featured-destination p{
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100%;
+  
 }
+.featured-destination .icons{
+    justify-content: space-between;
+    gap: 90px;
+    margin-top: 15px ; 
+}
+#sectionCard2{
+    flex-direction: column;
+    padding: 0px 30px;
+}
+.smartCity{
+    padding: 10px 20px;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+.smartCity-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smartCity-img img{
+    width: 300px;
+}
+
+.smartCityDiv h1{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+.smartCityDiv h5{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.smartCityDiv p{
+    display: none;
+}
+.smartCityDiv .smartButtons{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;  
+    gap: 0px;  
+}
+.smartButtons .btn1 , .btn2 {
+    margin-top: 10px;
+    background-color: #FFDA32;
+    font-size: 14px;
+}
+#gallery{
+      padding: 40px 30px;
+}
+#gallery .galleryInfo{
+    display: block;
+    flex-direction: column;
+    
+}
+.galleryInfo .galleryText{
+    width: 100%;
+}
+.galleryText h1{
+    margin-bottom: 5px;
+}
+.galleryText p{
+    margin-bottom: 15px;
+}
+
+.galleryPictures{
+    display: block;
+}
+.galleryPictures img{
+    width: 100%;
+}
+
+#stories{
+     padding: 30px 30px;
+}
+#stories .storyInfo{
+    display: block;
+}
+.storyInfo .storyText{
+    width: 100%;
+}
+.storyInfo h1{
+    margin-bottom: 10px;
+}
+.storyInfo p{
+    color: #778088;
+}
+.storyInfo .storyBtn button{
+    margin: 10px 0px;
+}
+
+#post{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    padding: 0px 15px;
+}
+
+#post .blogHeading{
+    font-size: 15px;
+    margin: 5px 0px;
+}
+#post .authorDiv{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
 footer{
     width: 100%;
 }
 .footerDiv{
     flex-direction: column;
     gap: 50px;
+    padding: 40px 20px;
 
 }
 .copyright{
