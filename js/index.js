@@ -18,7 +18,13 @@ links.forEach((item) => {
 const video = document.querySelector("#bg-video")
 const playbtn = document.querySelector("#playbtn")
 playbtn.addEventListener("click", () => {
-        video.play()
+    if (video.paused) {
+    video.play();
+   
+  } else {
+    video.pause();
+  
+  }
 })
 
 
@@ -160,21 +166,35 @@ cards.forEach((cardItem) => {
         const rateDiv = document.createElement("div")
         rateDiv.classList.add("rateDiv")
 
-        const ratingDiv = document.createElement("div")
-        ratingDiv.classList.add("ratingDiv")
 
-        const ratingCount = document.createElement("p")
-        ratingCount.classList.add("ratingCount")
-        ratingCount.textContent = cardItem.review
+       const ratingCount = document.createElement("p");
+ratingCount.classList.add("ratingCount");
+ratingCount.textContent = cardItem.review;
 
-        for (let i = 0; i < 5; i++) {
-            const ratings = document.createElement("i")
-            ratings.className = cardItem.star
-            ratings.addEventListener("click", () => {
-                ratings.style.color = "#FFA432"
-            })
-            ratingDiv.appendChild(ratings)
-        }
+const ratingDiv = document.createElement("div");
+ratingDiv.classList.add("ratingDiv");
+
+const stars = [];
+
+for (let i = 0; i < 5; i++) {
+  const star = document.createElement("i");
+  star.className = cardItem.star 
+  star.index = i;
+  stars.push(star);
+
+  star.addEventListener("click", () => {
+    const clickedIndex = parseInt(i);
+
+    stars.forEach((item, index) => {
+      item.style.color = index <= clickedIndex ? "#FFA432" : "#ccc";
+    });
+  });
+
+  ratingDiv.appendChild(star);
+}
+
+ratingDiv.appendChild(ratingCount);
+
 
         const price = document.createElement("h5")
         price.classList.add("cardPrice")
@@ -265,3 +285,165 @@ post.appendChild(blogCard)
 
 
 
+// signin and signup popup forms
+const signinButton = document.querySelector("#signin")
+const signinForm = document.querySelector("#signinForm")
+const signupForm = document.querySelector("#signupForm")
+const signUpLink = document.querySelector("#signUpLink")
+const signinLink = document.querySelector("#signinLink")
+const pageContent = document.querySelector("#pageContent")
+const closeBtn = document.querySelector("#closeBtn")
+const closeBtn2 = document.querySelector("#closeBtn2")
+
+
+signinButton.addEventListener("click", (e) => {
+  e.preventDefault()
+  signinForm.style.display = "block"
+  signupForm.style.display = "none"
+   pageContent.classList.add("blur")
+})
+
+signinLink.addEventListener("click", (e) => {
+  e.preventDefault()
+  signinForm.style.display = "block"
+  signupForm.style.display = "none"
+   pageContent.classList.add("blur")
+})
+signUpLink.addEventListener("click", (e) => {
+  e.preventDefault()
+  signupForm.style.display = "block"
+  signinForm.style.display = "none"
+   pageContent.classList.add("blur")
+})
+
+
+closeBtn.addEventListener("click", (e) => {
+  e.preventDefault()
+
+    pageContent.classList.remove('blur');
+    signupForm.style.display = "none"
+    signinForm.style.display = "none"
+})
+
+closeBtn2.addEventListener("click", (e) => {
+  e.preventDefault()
+
+    pageContent.classList.remove('blur');
+    signupForm.style.display = "none"
+    signinForm.style.display = "none"
+})
+    
+      
+
+//signup validation
+  const registerForm = document.querySelector("#registerForm");
+
+  const firstname = document.querySelector("#firstname-input");
+  const lastname = document.querySelector("#lastname-input");
+  const signupPassword = document.querySelector("#password-signup");
+  const signupEmail = document.querySelector("#email-signup");
+
+  const errorSignup = document.querySelector("#error-signup");
+
+  const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  registerForm.addEventListener("submit", (e) => {
+    e.preventDefault(); 
+
+    const firstnameValue = firstname.value.trim();
+    const lastnameValue = lastname.value.trim();
+    const signupPasswordValue = signupPassword.value.trim();
+    const signupEmailValue = signupEmail.value.trim();
+
+    errorSignup.style.color = "red";
+    errorSignup.style.fontSize = "14px";
+    errorSignup.style.marginBottom = "10px"
+
+     if(firstnameValue === "" &&
+        lastnameValue === "" && 
+        signupEmailValue === "" &&  
+        signupPasswordValue === "" ){
+      errorSignup.textContent = "You have to fill the form please"
+
+    }
+    else if (firstnameValue === "") {
+      errorSignup.textContent = "Firstname cannot be empty";
+    } 
+    else if (lastnameValue === "") {
+      errorSignup.textContent = "Lastname cannot be empty";
+    } 
+    else if (!emailPattern.test(signupEmailValue)) {
+      errorSignup.textContent = "Enter a valid email address";
+    } 
+    else if (signupPasswordValue === ""){
+       errorSignup.textContent = "Password cannot be empty"
+    }
+    else if (signupPasswordValue.length < 8) {
+      errorSignup.textContent = "Password must be at least 8 characters long";
+    } 
+    else if (!passwordPattern.test(signupPasswordValue)) {
+      errorSignup.textContent =
+        "Password must include uppercase, lowercase, number, and special character.";
+    } 
+    else {
+      errorSignup.style.color = "green";
+      errorSignup.textContent = "Signup successful!";
+
+    
+      registerForm.reset();
+    }
+
+    const signupData = {
+      firstname : firstnameValue,
+      lastname : lastnameValue,
+      email : signupEmailValue,
+      password : signupPasswordValue
+    }
+  localStorage.setItem("signupData", JSON.stringify(signupData));
+
+  });
+
+  //signin validation
+const loginForm = document.querySelector("#signinForm")
+const password = document.querySelector("#password-input")
+const email = document.querySelector("#email-input")
+
+const signinError = document.querySelector("#error-signin")
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+   const storedData = JSON.parse(localStorage.getItem("signupData"));
+
+  const passwordValue = password.value.trim()
+  const emailValue = email.value.trim()
+
+  signinError.style.color = "red"
+  signinError.style.fontSize = "15px"
+  signinError.textContent = ""
+
+  if(emailValue === "" && passwordValue === ""){
+    signinError.textContent = "All fields required" 
+  }
+   else if(!storedData){
+    signinError.textContent = "User not found, please create an account"
+  }
+  else  if(emailValue !== storedData.email || passwordValue !== storedData.password){
+    signinError.textContent = "Email or password is incorrect"
+  }
+  else {
+    signinError.style.color = "green";
+    signinError.textContent = "Login successful!";
+    
+    loginForm.reset();
+    window.location.href = "./profile.html"
+    console.log("redirecting to profile")
+  }
+
+ 
+   
+}
+)
+
+ 

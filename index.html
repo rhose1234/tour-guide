@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour Guide</title>
+    <title>Tour Guide - We Find The Best Tours For You</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div id="pageContent">
 
 <!---desktop navigation bar starts-->
 <nav class="desktop-nav">
@@ -19,14 +20,14 @@
         <ul id="link-wrapper">
             <li><a href="/" class="nav-link">Home</a></li>
             <li><a href="/" class="nav-link">About Us</a></li>
-            <li><a href="/" class="nav-link">Popular Destination</a></li>
-            <li><a href="/" class="nav-link">Our Packages</a></li>
-            <li><a href="/" class="nav-link">Help</a></li>
+            <li><a href="#explore" class="nav-link">Popular Destination</a></li>
+            <li><a href="#sectionCard" class="nav-link">Our Packages</a></li>
+            <li><a href="#footerDiv" class="nav-link">Help</a></li>
         </ul>
     </div>
 
     <div id="signin-btn">
-         <button>Sign In</button>
+         <button id="signin">Sign In</button>
     </div>
 </nav>  
 <!---desktop navigation bar ends-->
@@ -46,9 +47,9 @@
     <ul class="mobileList">
             <li><a href="/" class="mobilenav_Link">Home</a></li>
             <li><a href="/" class="mobilenav_Link">About Us</a></li>
-            <li><a href="/" class="mobilenav_Link">Popular Destination</a></li>
-            <li><a href="/" class="mobilenav_Link">Our Packages</a></li>
-            <li><a href="/" class="mobilenav_Link">Help</a></li>
+            <li><a href="#explore" class="mobilenav_Link">Popular Destination</a></li>
+            <li><a href="#sectionCard" class="mobilenav_Link">Our Packages</a></li>
+            <li><a href="#footerDiv" class="mobilenav_Link">Help</a></li>
                <div id="signin-btn">
          <button>Sign In</button>
     </div>
@@ -113,7 +114,7 @@
     </div>
  </section>
 
- <section class="second-section">
+ <section class="second-section" id="explore">
     <h1>Explore Popular Cities</h1>
     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
 
@@ -310,7 +311,7 @@
  </section>
 
  <footer>
-    <div class="footerDiv">
+    <div class="footerDiv" id="footerDiv">
     <div class="div1">
         <label for="Location">Location</label>
         <select name="Language" id="language">
@@ -380,6 +381,76 @@
     </div>
 </div>
  </footer>
+    </div>
+
+ <div class="signin" id="signinForm">
+                <div class="login-form">
+                    <div class="infoText">
+                    <h1>Login into your account</h1>
+                   <i class="fa-regular fa-x" id="closeBtn"></i>
+                    </div>
+                    <form action="" id="signinForm">
+                        <input type="email" placeholder="Enter your email address" id="email-input" >
+                        <input type="password" placeholder="Enter your password" id="password-input">
+                      
+                            <p id="error-signin"></p>
+                      
+                        <input id="submit" type="submit" value="Sign in">
+
+                        <button class="google-signin">
+                            <img src="./assets/images/google.png" alt="google">
+                            <p>Sign in with google</p>
+                        </button>
+
+                        <button class="facebook-signin">
+                            <img src="./assets/images/facebook.png" alt="facebook">
+                            <p>Sign in with facebook</p>
+                        </button>
+
+                        <div class="redirect-login">
+                            <p>Don't have an account?</p>
+                            <a href="" id="signUpLink">Sign up</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+            <!-- sign up form -->
+            <div class="signup" id="signupForm">
+                <div class="register-form">
+                     <div class="infoText">
+                    <h1>Create an account</h1>
+                   <i class="fa-regular fa-x" id="closeBtn2"> </i>
+                    </div>
+                    <form action="" id="registerForm">
+                        <input type="text" placeholder="Enter Your firstname" id="firstname-input">
+                        <input type="text" placeholder="Enter your lastname" id="lastname-input">
+                        <input type="email" placeholder="Enter your email address" id="email-signup">
+                        <input type="password" placeholder="Enter your password" id="password-signup">
+                        <input id="submit" type="submit" value="Sign Up">
+                               <p id="error-signup"></p>
+
+                        <button class="google-signup">
+                            <img src="./assets/images/google.png" alt="google">
+                            <p>Sign up with google</p>
+                        </button>
+
+                        <button class="facebook-signup">
+                            <img src="./assets/images/facebook.png" alt="facebook">
+                            <p>Sign up with facebook</p>
+                        </button>
+
+                        <div class="redirect-signup">
+                            <p>Already have an account?</p>
+                            <a href="" id="signinLink">Log in</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
 
 
     <script src="./js/index.js"></script>
