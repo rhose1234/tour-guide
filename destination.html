@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/destination.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -32,7 +32,6 @@
 <!---desktop navigation bar ends-->
 
 
-
 <!---mobile navigation bar starts-->
 <nav class="mobile-navigation">
     <div class="mobile-nav">
@@ -57,124 +56,10 @@
 </nav>
 <!---mobile navigation bar starts-->
 
-<div class="profileText">
-    <h3>My Profile</h3>
-    <div class="Profile-redirect">
-        <a href="/index.html">Home</a>
-        <a href="profile.html">/My Profile</a>
-    </div>
-</div>
-
-<div class="profile_Overlay">
-
-<div class="profileBg">
-<div class="profile-Box">
-<div class="profileLinks">
- <div class="profile-pic">
-  <img id="profileImage" src="./assets/images/profileimg.png" alt="Profile Picture">
-  <label for="edit" class="upload-label"><img src="./assets/images/edit.png" alt=""></label>
-  <input type="file" id="imageUpload" accept="image/*">
- 
-</div>
-<div id="profileName">
-</div> 
-
-<div class="ProfileLocate">
-    <div class="locateDiv1">
-        <img src="./assets/images/location.png" alt="location" />
-        <p id="location">location</p>
-    </div>
-
-    <div class="locateDiv2">
-        <img src="./assets/images/birthday.png" alt="birthday"/>
-        <p id="birthday">Birthday</p>
-    </div>
-</div>
-
-</div>
-</div>
-
-<div class="navigateProfile">
-    <a href="profile.html">Profile Informations</a>
-    <a href="" id="historyBtn">Booking History</a>
-    <a href="#footerDiv">Newsletter Subscription</a>
-    <a href="/">Manage notifications</a>
-</div>
-</div>
-
-<div class="ProfileForm" id="profileForm">
-    <div class="infoForm">
-    <form id="infoForm">
-        <h2>Personal Information</h2>
-
-        <label for="name">Name:</label>
-        <input type="text" name="Name" id="profileFullname"  readonly>
-
-        <label>Date of Birth</label>
-        <input type="date" placeholder="Date of birth" id="profileDate">
-
-        <label>Phone</label>
-        <input type="number" placeholder="Phone number" id="profileNumber">
-
-        <label>Location</label>
-        <input type="text" placeholder="Enter Location"  id="profileLocation">
-
-        <p id="infoFormError"></p>
-
-        <input type="submit" value="Save" id="infoSubmit">
-    </form>
-    </div>
 
 
-    <div class="securityForm">
-    <form id="securityForm">
-
-        <h2>Security</h2>
-
-        <label for="email">Email Address</label>
-        <input type="email" placeholder="Enter email" id="securityEmail">
-
-        <label for="securityPassword">Password</label>
-        <input type="password" placeholder="Enter your password" id="securityPassword">
-
-        <label for="confirmPassword">Confirm Password</label>
-        <input type="password" placeholder="Confirm Password" id="securityPassword2">
-
-        <p id="securityError"></p>
-
-        <input type="submit" value="Save" id="securitySubmit">
-    </form>
-</div>
-
-</div>
-
-<div class="table" id="profileTable">
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Travel</th>
-                <th>Amount</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td id="td1"></td>
-                <td id="td2"></td>
-                <td id="td3"></td>
-                <td id="td4"></td>
-            </tr>
-
-        </tbody>
-    </table>
-</div>
-
-</div>
 
 
-<!---footer section---->
  <footer>
     <div class="footerDiv" id="footerDiv">
     <div class="div1">
@@ -248,20 +133,19 @@
  </footer>
 </div>
     
-<!---signin form--->
 <div class="signin" id="signinForm">
                 <div class="login-form">
                     <div class="infoText">
                     <h1>Login into your account</h1>
                    <i class="fa-regular fa-x" id="closeBtn"></i>
                     </div>
-                    <form action="" id="loginForm">
+                    <form action="" id="signinForm">
                         <input type="email" placeholder="Enter your email address" id="email-input" >
                         <input type="password" placeholder="Enter your password" id="password-input">
                       
                             <p id="error-signin"></p>
                       
-                        <input id="submitSignin" type="submit" value="Sign in">
+                        <input id="submit" type="submit" value="Sign in">
 
                         <button class="google-signin">
                             <img src="./assets/images/google.png" alt="google">
@@ -295,7 +179,7 @@
                         <input type="text" placeholder="Enter your lastname" id="lastname-input">
                         <input type="email" placeholder="Enter your email address" id="email-signup">
                         <input type="password" placeholder="Enter your password" id="password-signup">
-                        <input id="submitSignup" type="submit" value="Sign Up">
+                        <input id="submit" type="submit" value="Sign Up">
                                <p id="error-signup"></p>
 
                         <button class="google-signup">
@@ -320,7 +204,6 @@
 
 
     <script src="./js/index.js"></script>
-    <script src="./js/profile.js" ></script>
+    <script src="./js/destination.js"></script>
 </body>
 </html>
-

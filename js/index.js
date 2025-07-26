@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () =>  {
 //mobile navigation responsiveness
 const links = document.querySelectorAll(".mobilenav_Link")
 const mobileList = document.querySelector(".mobileList")
@@ -16,8 +17,10 @@ links.forEach((item) => {
 
 //to play video on click of the button
 const video = document.querySelector("#bg-video")
-const playbtn = document.querySelector("#playbtn")
-playbtn.addEventListener("click", () => {
+const playBtn = document.querySelector("#playBtn")
+
+playBtn.addEventListener("click", () => {
+  
     if (video.paused) {
     video.play();
    
@@ -28,7 +31,7 @@ playbtn.addEventListener("click", () => {
 })
 
 
-const smallCircles = document.querySelector(".small-circles")
+const smallCircles = document.querySelector("#small-circles")
 const boxItems = ["New York", "Carlifonia", "Alaska", "Sidney", "Dubia", "London", "Tokyo", "Dehli"]
 
 boxItems.forEach((city) => {
@@ -389,9 +392,12 @@ closeBtn2.addEventListener("click", (e) => {
     else {
       errorSignup.style.color = "green";
       errorSignup.textContent = "Signup successful!";
+      signinForm.style.display = "block"
+
+
 
     
-      registerForm.reset();
+      // registerForm.reset();
     }
 
     const signupData = {
@@ -404,17 +410,17 @@ closeBtn2.addEventListener("click", (e) => {
 
   });
 
-  //signin validation
-const loginForm = document.querySelector("#signinForm")
-const password = document.querySelector("#password-input")
-const email = document.querySelector("#email-input")
+//signin validation
+const loginForm = document.querySelector("#loginForm");
+const password = document.querySelector("#password-input");
+const email = document.querySelector("#email-input");
 
-const signinError = document.querySelector("#error-signin")
+const signinError = document.querySelector("#error-signin");
 
 loginForm.addEventListener("submit", (e) => {
-  e.preventDefault()
+  e.preventDefault();
 
-   const storedData = JSON.parse(localStorage.getItem("signupData"));
+  const storedData = JSON.parse(localStorage.getItem("signupData"));
 
   const passwordValue = password.value.trim()
   const emailValue = email.value.trim()
@@ -423,27 +429,21 @@ loginForm.addEventListener("submit", (e) => {
   signinError.style.fontSize = "15px"
   signinError.textContent = ""
 
-  if(emailValue === "" && passwordValue === ""){
-    signinError.textContent = "All fields required" 
-  }
-   else if(!storedData){
+  if (emailValue === "" && passwordValue === "") {
+    signinError.textContent = "All fields required"
+  } 
+  else if (!storedData) {
     signinError.textContent = "User not found, please create an account"
-  }
-  else  if(emailValue !== storedData.email || passwordValue !== storedData.password){
+  } 
+  else if (
+    emailValue !== storedData.email || 
+    passwordValue !== storedData.password ) 
+  {
     signinError.textContent = "Email or password is incorrect"
-  }
-  else {
-    signinError.style.color = "green";
-    signinError.textContent = "Login successful!";
-    
-    loginForm.reset();
+  } else {
+    signinError.style.color = "green"
+    signinError.textContent = "Login successful!"
     window.location.href = "./profile.html"
-    console.log("redirecting to profile")
   }
-
- 
-   
-}
-)
-
- 
+})
+})
