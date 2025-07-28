@@ -58,8 +58,168 @@ nav.desktop-nav{
  nav.mobile-navigation{
     display: none;
  }
+.destination-location{
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.innerLocation{
+    background-color: rgba(249, 250, 253, 1) ;
+    height: auto;
+    width: 100%;
+    padding: 40px 100px;
+}
+.innerLocation .formDivs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+}
+.innerLocation .availabilityDiv{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.availabilityDiv .availabilityText{
+    border-bottom: 2px solid rgba(249, 250, 253, 1);
+}
+.availabilityDiv .availabilityText h3{
+    font-size: bold;
+    margin: 5px 0px;
+    padding: 10px 30px;
 
+}
+.availabilityDiv .availabiltyForm{
+    margin: 15px 0px;
+    padding: 20px 30px;
 
+    
+}
+.availabilityDiv .availabiltyForm input{
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    outline: none;
+    background-color: rgba(244, 244, 245, 1);
+}
+.availabilityDiv .availabiltyForm label{
+    font-weight: 700;
+}
+.availabilityDiv .availabiltyForm button{
+    background-color: #7BBCB0;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffffff;
+    border-radius: 5px;
+
+}
+.themeDiv{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.themeDiv .themeText{
+    border-bottom: 2px solid rgba(249, 250, 253, 1);
+
+}
+.themeDiv .themeText h3{
+    font-size: bold;
+    margin: 5px 0px;
+    padding: 10px 30px;
+
+}
+.themeDiv .themeSelect{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.themeDiv .themeSelect input{
+    margin-right: 5px;
+}
+.themeDiv .themeSelect label{
+    font-size: 14px;
+}
+.themeDiv .themeSelect a{
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #7BBCB0;
+    margin-bottom: 20px;
+}
+
+.durationDiv{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.durationDiv .durationText{
+    border-bottom: 2px solid rgba(249, 250, 253, 1);
+
+}
+.durationDiv .durationText h3{
+    font-size: bold;
+    margin: 5px 0px;
+    padding: 10px 30px;
+
+}
+.durationDiv .durationSelect{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.durationDiv .durationSelect input{
+    margin-right: 5px;
+}
+.durationDiv .durationSelect label{
+    font-size: 14px;
+}
+
+.destinationDiv{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.destinationDiv .destinationText{
+    border-bottom: 2px solid rgba(249, 250, 253, 1);
+
+}
+.destinationDiv .destinationText h3{
+    font-size: bold;
+    margin: 5px 0px;
+    padding: 10px 30px;
+
+}
+.destinationDiv .destinationSelect{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.destinationDiv .destinationSelect input{
+    margin-right: 5px;
+}
+.destinationDiv .destinationSelect label{
+    font-size: 14px;
+}
+.destinationDiv .destinationSelect a{
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #7BBCB0;
+    margin-bottom: 20px;
+}
 
 
 
