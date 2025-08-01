@@ -7,6 +7,9 @@
     font-family: "Mulish", sans-serif;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 /* desktop navigation bar starts */
 nav.desktop-nav{
     width: 100%;
@@ -48,14 +51,37 @@ nav.desktop-nav{
     color: #ffffff;
 
 }
+#link-wrapper li a:hover{
+    margin-left: 50px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #7BBCB0;
+
+}
+#link-wrapper li a.active{
+ 
+    color: #7BBCB0;
+
+}
 #signin-btn button{
     padding: 14px 30px;
     border: none;
     background-color: #FFDA32;
     border-radius: 5px;
     font-weight: 700;
+    transition: transform 0.3s ease;
+
     
 
+}
+#signin-btn button:hover{
+    padding: 14px 30px;
+    border: 1px solid #FFDA32;
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #ffffff;
+    transform: scale(1.1);
 }
  nav.mobile-navigation{
     display: none;
@@ -140,8 +166,8 @@ form input{
     outline: none;
     border: 1px solid #495560;
 }
-#submit{
-    background-color: #7BBCB0;
+.signinSubmit{
+    background-color: #7BBCB0 !important;
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -246,8 +272,8 @@ form input{
     outline: none;
     border: 1px solid #495560;
 }
-#submit{
-    background-color: #7BBCB0;
+.signupSubmit{
+    background-color: #7BBCB0 !important;
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -408,6 +434,16 @@ button.facebook-signup img{
     background-color: #FFDA32;
     border-radius: 50px;
     font-weight: 700;
+    transition: transform 0.3s ease;
+
+
+}
+.box button:hover{
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    transform: scale(1.1) translateX(5px);
+
 
 }
 /* second section */
@@ -435,6 +471,7 @@ button.facebook-signup img{
     flex-direction: row;
     margin: 30px 120px;
     gap: 5px;
+   
 }
 
 .item-box{
@@ -443,10 +480,12 @@ button.facebook-signup img{
     color: #495560;
     font-weight: 700;
     padding: 10px 25px;
+    transition: 1s ease;
 }
 .item-box:hover{
     background-color: #7BBCB0;
     color: #ffffff ;
+    transform: scaleZ(50px);
 }
 .alaska{
     position: relative;
@@ -500,6 +539,13 @@ button.facebook-signup img{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px 10px;
     width: 60%;
+    transition: ease 0.5s;
+
+}
+.feature1:hover{
+    transform: scale(1.1);
+    background-color: #D176E0;
+    color: #ffffff;
 
 }
 .feature2{
@@ -513,6 +559,13 @@ button.facebook-signup img{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px 20px;
+    transition: ease 0.5s;
+
+}
+.feature2:hover{
+    background-color: #7BBCB0;
+    color: #ffffff;
+    transform: scale(1.1);
 
 }
 .feature3{
@@ -526,6 +579,13 @@ button.facebook-signup img{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px 20px;
+    transition: ease 0.5s;
+
+}
+.feature3:hover{
+    background-color: #E4B613;
+    color: #ffffff;
+    transform: scale(1.1);
 
 }
 .feature4{
@@ -539,6 +599,12 @@ button.facebook-signup img{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px 20px;
+    transition: ease 0.5s;
+}
+.feature4:hover{
+    background-color: #FC3131;
+    color: #ffffff;
+    transform: scale(1.1);
 
 }
 .feature5{
@@ -552,7 +618,12 @@ button.facebook-signup img{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px 20px;
-
+    transition: ease 0.5s;
+}
+.feature5:hover{
+    background-color: #5C9BDE;
+    color: #ffffff;
+    transform: scale(1.1);
 }
 #sectionCard{
     display: flex;
@@ -566,6 +637,11 @@ button.facebook-signup img{
 #sectionCard .card{
     background-color: #FFFFFF;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+#sectionCard .card:hover{
+        transform: scale(1.1);
+
 }
 #sectionCard .cardImage{
     width: 100%;

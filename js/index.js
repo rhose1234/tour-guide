@@ -16,19 +16,19 @@ links.forEach((item) => {
     })
 
 //to play video on click of the button
-const video = document.querySelector("#bg-video")
-const playBtn = document.querySelector("#playBtn")
+// const video = document.querySelector("#bg-video")
+// const playBtn = document.querySelector("#playBtn")
 
-playBtn.addEventListener("click", () => {
+// playBtn.addEventListener("click", () => {
   
-    if (video.paused) {
-    video.play();
+//     if (video.paused) {
+//     video.play();
    
-  } else {
-    video.pause();
+//   } else {
+//     video.pause();
   
-  }
-})
+//   }
+// })
 
 
 const smallCircles = document.querySelector("#small-circles")
@@ -187,6 +187,7 @@ for (let i = 0; i < 5; i++) {
 
   star.addEventListener("click", () => {
     const clickedIndex = parseInt(i);
+    console.log(clickedIndex)
 
     stars.forEach((item, index) => {
       item.style.color = index <= clickedIndex ? "#FFA432" : "#ccc";
