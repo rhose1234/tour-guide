@@ -46,7 +46,7 @@ boxItems.forEach((city) => {
     
 })
 
-
+//onscroll navbar color change
 window.onscroll = function () {
   const navbar = document.querySelector(".desktop-nav");
   const mobile = document.querySelector(".mobile-nav")
@@ -117,12 +117,41 @@ const cards = [
         review : "584 reviews",
         person : "per person"
     },
+        {
+        image : "./assets/images/afternoontea.png",
+        title: "Alaska: Magic of London Tour with Afternoon Tea at Ark",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "584 reviews",
+        person : "per person"
+    },
+     {
+        image : "./assets/images/afternoontea.png",
+        title: "Alaska: Magic of London Tour with Afternoon Tea at Ark",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "584 reviews",
+        person : "per person"
+    },
+
 ]
 
 const sectionCard = document.querySelector("#sectionCard")
 const sectionCard2 = document.querySelector("#sectionCard2")
 
-cards.forEach((cardItem) => {
+cards.forEach((cardItem, index) => {
     
     const createCard = () => {
         const card = document.createElement("div")
@@ -170,7 +199,7 @@ cards.forEach((cardItem) => {
         rateDiv.classList.add("rateDiv")
 
 
-       const ratingCount = document.createElement("p");
+const ratingCount = document.createElement("p");
 ratingCount.classList.add("ratingCount");
 ratingCount.textContent = cardItem.review;
 
@@ -198,8 +227,6 @@ for (let i = 0; i < 5; i++) {
 }
 
 ratingDiv.appendChild(ratingCount);
-
-
         const price = document.createElement("h5")
         price.classList.add("cardPrice")
         price.textContent = cardItem.price
@@ -220,12 +247,35 @@ ratingDiv.appendChild(ratingCount);
 
         card.append(cardImage, cardHeading, iconText, ratingSection)
 
-        return card
+        return card;
+    }
+    if(index < 4){
+      sectionCard.appendChild(createCard());
     }
 
-    sectionCard2.appendChild(createCard());
-    sectionCard.appendChild(createCard());
+     sectionCard2.appendChild(createCard());
+
+     // to scroll carounsel on featured section
+const scrollRight = document.querySelector("#scrollRight");
+const scrollLeft = document.querySelector("#scrollLeft");
+const scrollTime = 300;
+
+scrollRight.addEventListener("click", () => {
+  sectionCard2.scrollLeft -= scrollTime;
 });
+
+scrollLeft.addEventListener("click", () => {
+  sectionCard2.scrollLeft += scrollTime;
+});
+
+    }  
+
+);
+
+
+
+
+
 
 
 const posts = [
@@ -257,7 +307,6 @@ const posts = [
 ]
 
 const post = document.querySelector("#post")
-
 posts.map((blog) => {
 
     const blogCard = document.createElement("div")
@@ -447,4 +496,17 @@ loginForm.addEventListener("submit", (e) => {
     window.location.href = "./profile.html"
   }
 })
+
+const favourite = document.querySelector("#heartIcon")
+const share = document.querySelector("#shareIcon")
+
+favourite.addEventListener("click", () => {
+    favourite.style.backgroundColor = "#FFDA32"
+})
+
+share.addEventListener("click", () => {
+    share.style.backgroundColor = "#7BBCB0"
+})
+
+
 })

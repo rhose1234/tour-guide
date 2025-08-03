@@ -10,6 +10,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    overflow-x: hidden;
+}
 /* desktop navigation bar starts */
 nav.desktop-nav{
     width: 100%;
@@ -140,6 +143,26 @@ display: none;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
     
 }
+.login-form .close {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: end;
+    position: absolute;
+    top: 8%;
+    right: 12%;
+}
+.login-form .close i{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    background-color: #7BBCB0;
+    padding: 7px;
+    border-radius: 50%;
+   
+}
+
 .login-form .infoText{
     display: flex;
     flex-direction: row;
@@ -234,7 +257,8 @@ button.facebook-signin img{
   transform: translate(-50%, -50%);
   padding: 30px 50px;
   z-index: 1000;
-  width: auto;
+  width: 50%;
+  margin: 20px 0px;
 
 }
 .signup .register-form{
@@ -244,6 +268,25 @@ button.facebook-signin img{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
 }
+.register-form .close {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    align-items: end;
+    position: absolute;
+    top: 6%;
+    right: 9%;
+}
+.register-form .close i{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    background-color: #7BBCB0;
+    padding: 7px;
+    border-radius: 50%;
+   
+}
 .register-form .infoText{
     display: flex;
     flex-direction: row;
@@ -252,10 +295,7 @@ button.facebook-signin img{
     gap: 30px;
     color: #7BBCB0;
 }
-.register-form .infoText i{
-    font-size: 15px;
-}
-.register-form .infoText h1{
+.register-form h1{
     color: #7BBCB0;
     margin: 15px 0px;
 }
@@ -728,6 +768,14 @@ button.facebook-signup img{
     text-align: center;
     font-size: 16px;
     margin: 10px 0px;
+    transition: ease 0.5s;
+
+}
+.trending h5:hover{
+    transform: scale(1.1);
+    border: 1px solid #7BBCB0;
+    background-color: transparent;
+    color: #ffffff;
 
 }
 .trending h1{
@@ -791,7 +839,11 @@ button.facebook-signup img{
     border-radius: 50px;
     font-weight: 800;
     box-shadow: rgb(248, 244, 5) 0px 20px 30px -10px;
+    transition: ease-in-out 0.5s;
     
+}
+.booking button:hover{
+    transform: scale(1.1);
 }
 .booking .icons{
     display: flex;
@@ -858,10 +910,20 @@ button.facebook-signup img{
     gap: 18px;
     padding: 30px 100px;
     width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: auto;          
+    overflow-y: hidden;
+
+
+}
+#sectionCard2::-webkit-scrollbar{
+    display: none;
 }
 #sectionCard2 .card{
     background-color: #FFFFFF;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 250px;       
+    flex-shrink: 0;
 }
 #sectionCard2 .cardImage{
     width: 100%;
@@ -916,6 +978,7 @@ button.facebook-signup img{
     /* padding: 10px 40px;  */
     
 }
+
 .smartButtons .btn1, .btn2{
     display: flex;
     align-items: center;
@@ -929,6 +992,12 @@ button.facebook-signup img{
     box-shadow: rgb(248, 244, 5) 0px 20px 30px -10px;
     border: none;
     border-radius: 50px;
+    transition: ease-out 0.5s;
+
+}
+.smartButtons .btn1:hover, .btn2:hover{
+        transform: scale(1.1);
+
 }
 #gallery{
       padding: 30px 100px;
@@ -956,17 +1025,28 @@ button.facebook-signup img{
     background-color: #495560;
     border: none;
 }
+.galleryInfo .galleryBtn button:hover{
+    background-color: transparent;
+    border: 1px solid #495560;
+    color: #495560;
+}
 .galleryPictures{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 30px;
+    
 }
 .galleryPictures img{
     width: 280px;
     margin-top: 20px;
+    transition: ease-in-out 0.5s;
     
+
+}
+.galleryPictures img:hover{
+    transform: scale(1.05);
 
 }
 #stories{
@@ -994,6 +1074,12 @@ button.facebook-signup img{
     color: #ffffff;
     background-color: #495560;
     border: none;
+}
+.storyInfo .storyBtn button:hover{
+    background-color: transparent;
+    border: 1px solid #495560;
+    color: #495560;
+
 }
 #post{
     display: flex;
@@ -1070,6 +1156,11 @@ footer{
 .footerDiv .div2 a, .div3 a, .div4 a{
     text-decoration: none;
     color: #ffffff8c;
+    font-size: 14px;
+}
+.footerDiv .div2 a:hover, .div3 a:hover, .div4 a:hover{
+    text-decoration: none;
+    color: #ffffff;
     font-size: 14px;
 }
 .footerDiv .div2 h5, .div3 h5, .div4 h5{

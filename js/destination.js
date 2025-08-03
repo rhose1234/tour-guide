@@ -1,3 +1,5 @@
+
+
 const activitiesInfo = [
     {
         image : "./assets/images/activty1",
