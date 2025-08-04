@@ -81,6 +81,9 @@ nav.desktop-nav{
     height: auto;
     width: 100%;
     padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
 .innerLocation .formDivs{
     display: flex;
@@ -232,7 +235,42 @@ nav.desktop-nav{
     margin-bottom: 20px;
 }
 
+.innerLocation #destinationContainer{
+    width: 75%;
+    
+}
 
+#destinationContainer .destinationCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+}
+#destinationContainer .destinationItem{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.activityFeatures{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+
+}
+.activityFeature{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+
+}
 
  .signin{
 display: none;

@@ -1,3 +1,11 @@
+//for uploading image
+const profileImage = document.querySelector("#profileImage")
+const uploadImg = document.querySelector("#uploadImg")
+
+uploadImg.onchange = () => {
+  profileImage.src = URL.createObjectURL(uploadImg.files[0])
+}
+
 
 
 const loggedUser = JSON.parse(localStorage.getItem("signupData"));

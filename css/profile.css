@@ -96,7 +96,7 @@ nav.desktop-nav{
     padding: 50px 0px;
      background-color: rgba(255, 255, 255, 1);
      border-right: 2px solid rgba(244, 244, 245, 1);
-     width: 40%;
+     width: 30%;
 }
 .profile-Box{
     display: flex;
@@ -116,27 +116,26 @@ align-items: center;
 .profile-pic{
    
     position: relative;
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    border: 1px solid #495560;
-    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  
    
 }
 .profile-pic #profileImage{
-    position: absolute;
-    top: -16%;
-    left: -18%;
-    width: 220px;
-    height: 220px;
+    width: 180px ;
+    height: 180px;
+    border-radius: 50%;
 }
-.profile-pic .upload-label{
+.profile-pic label{
     position: absolute;
     top: 50%;
-    right: -7%;
+    right: -8%;
 }
 .profile-pic input{
-
+    display: none;
 }
 #profileContainer h3{
   font-size: 30px ;
@@ -172,16 +171,16 @@ align-items: center;
        background-color: none;
     color: #000000;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 20px 70px;
+    padding: 20px 60px;
 
 }
 .navigateProfile a:first-child{
     background-color: #7BBCB0;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     padding: 20px 70px;
 }
@@ -190,7 +189,7 @@ align-items: center;
        background-color: #7BBCB0;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     padding: 20px 70px;
 
