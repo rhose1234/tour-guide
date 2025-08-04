@@ -177,7 +177,11 @@ ratingContainer.classList.add("ratingContainer")
 for(let i = 0; i < 5; i++){
 const destinationActivityRating = document.createElement("i")
 destinationActivityRating.className = item.star
-destinationActivity.appendChild(destinationActivityRating)
+
+ratingContainer.appendChild(destinationActivityRating)
+destinationActivity.append(destinationActivityText, ratingContainer)
+
+
 }
 
 const activityReview = document.createElement("p")
@@ -187,7 +191,6 @@ activityReview.textContent = item.review
 const destinationTitle = document.createElement("h1")
 destinationTitle.textContent =item.title
 destinationTitle.classList.add("destinationTitle")
-
 
 
 const activityFeatures = document.createElement("div")
@@ -222,8 +225,7 @@ activityFeatureIcon3.className =item.icon3
 
 const activityPrice = document.createElement("h4")
 activityPrice.textContent = item.price
-
-
+activityPrice.classList.add("activityPrice")
 
 
 destinationContainer.appendChild(destinationCard)
@@ -241,12 +243,12 @@ activityFeatures.append(activityFeature1, activityFeature2, activityFeature3)
 
 
 destinationDetailsContainer.append(destinationActivity, destinationTitle, activityFeatures)
-destinationActivity.appendChild(destinationActivityText)
-
-
-
-
-
-
-
 })
+
+const LoadMoreBtn = document.createElement("button")
+LoadMoreBtn.textContent = "Load More"
+LoadMoreBtn.classList.add("loadMoreBtn")
+
+destinationContainer.appendChild(LoadMoreBtn)
+
+       

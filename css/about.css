@@ -348,7 +348,7 @@ button.facebook-signup{
     justify-content: center;
     gap: 10px;
      padding: 10px 0px;
-    border: 1px solid #495560;
+    border: 1px solid #495560 ;
     background-color: white;
     border-radius: 10px;
 }
@@ -374,7 +374,7 @@ button.facebook-signup img{
 }
 .hero-content{
    position: absolute;
-  top: 45%;
+  top: 45%; 
   left: 50%;
   transform: translate(-50%, -50%); 
   text-align: center;

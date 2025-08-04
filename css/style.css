@@ -1125,6 +1125,7 @@ footer{
     justify-content: space-between;
     flex-direction: row;
     gap: 10px;
+    /* margin: 0px 0px; */
 }
 /* Main select styling */
 .footerDiv .div1 select {
