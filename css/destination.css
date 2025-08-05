@@ -318,9 +318,11 @@ nav.desktop-nav{
     color: #7BBCB0;
     font-size: 30px;
     font-family: "Volkhov", serif;
-
-
-
+}
+.reviewTag{
+    font-size: 12px;
+    color: #495560;
+    text-align: center;
 }
 .loadMoreBtn{
     width: 100%;
@@ -337,6 +339,49 @@ nav.desktop-nav{
    color: #ffffff;
 }
 
+
+.specialContainer{
+    padding: 100px 120px;
+}
+.specialContainer .special_first_heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.special_first_heading .carouselIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.carouselIcons .fa-chevron-left{
+    background-color: #FFDA32;
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(238, 185, 11, 0.35) 0px 5px 15px;
+}
+.carouselIcons .fa-chevron-right{
+    background-color: transparent;
+    border: 1px solid #FFDA32;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+}
+#specialContainerCards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
  .signin{
 display: none;
   position: fixed;
