@@ -156,9 +156,6 @@ cards.forEach((cardItem, index) => {
     const createCard = () => {
         const card = document.createElement("div")
         card.classList.add("card")
-        card.addEventListener("click", () =>{
-          window.location.href= "destination.html"
-        })
 
         const cardImage = document.createElement("img")
         cardImage.classList.add("cardImage")
@@ -389,7 +386,7 @@ closeBtn2.addEventListener("click", (e) => {
       
 
 //signup validation
-  const registerForm = document.querySelector("signupForm");
+  const registerForm = document.querySelector("#registerForm");
 
   const firstname = document.querySelector("#firstname-input");
   const lastname = document.querySelector("#lastname-input");

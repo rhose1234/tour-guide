@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="./css/destination.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -19,7 +20,7 @@
         <ul id="link-wrapper">
             <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="About.html" class="nav-link">About Us</a></li>
-            <li><a href="#sectionCard2" class="nav-link">Popular Destination</a></li>
+            <li><a href="destination.html" class="nav-link">Popular Destination</a></li>
             <li><a href="#sectionCard" class="nav-link">Our Packages</a></li>
             <li><a href="#footerDiv" class="nav-link">Help</a></li>
         </ul>
@@ -231,7 +232,7 @@
     <h2>Outside The City Special</h2>
 
     <div class="special_first_heading">
-        <div>
+        <div class="waterHeadingDiv">
             <p>Water Activities</p>
         </div>
     <div class="carouselIcons">
@@ -241,11 +242,100 @@
 
         
     </div>
-    <div id="specialContainerCards">
+</div>
+
+ <div id="specialContainerCards">
         
     </div>
 
+
+    <!-- special foods container -->
+
+    <div class="specialFoodsContainer">
+
+    <div class="special_foods_heading">
+        <div class="foodsHeadingDiv">
+            <p>Special Foods</p>
+        </div>
+    <div class="carouselIcons">
+    <i class="fa-solid fa-chevron-left" id="foodscrollLeft"></i>
+    <i class="fa-solid fa-chevron-right" id="foodscrollRight"></i>
+ </div>
+
+        
+    </div>
 </div>
+
+ <div id="specialFoodsContainerCards">
+        
+    </div>
+
+     <!-- river activities container -->
+
+      <div class="riverActivityContainer">
+
+    <div class="river_activity_heading">
+        <div class="riverHeadingDiv">
+            <p>River Activity</p>
+        </div>
+    <div class="carouselIcons">
+    <i class="fa-solid fa-chevron-left" id="riverscrollLeft"></i>
+    <i class="fa-solid fa-chevron-right" id="riverscrollRight"></i>
+ </div>
+
+        
+    </div>
+</div>
+
+ <div id="riverContainerCards">
+        
+    </div>
+
+
+ <section id="gallery" data-aos="zoom-out-right">
+  
+    <div class="galleryInfo">
+        <div class="galleryText">
+            <h1>From the Gallery</h1>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit</p>
+        </div>
+        <div class="galleryBtn">
+            <button>View all images</button>
+        </div>
+    </div>
+
+    <div class="galleryPictures">
+        <img src="./assets/images/gallery1.png" alt="gallery picture 1" >
+        <img src="./assets/images/gallery2.png" alt="gallery picture 2" >
+        <img src="./assets/images/gallery3.png" alt="gallery picture 3">
+        <img src="./assets/images/gallery4.png" alt="gallery picture 4">
+        <img src="./assets/images/gallery5.png" alt="gallery picture 5">
+        <img src="./assets/images/gallery6.png" alt=" gallery picture 6">
+        <img src="./assets/images/gallery7.png" alt="gallery picture 7">
+        <img src="./assets/images/gallery8.png" alt="gallery picture 8">
+    </div>
+ </section>
+
+ <section id="stories" data-aos="zoom-out-up">
+  
+    <div class="storyInfo">
+        <div class="storyText">
+            <h1>Latest Stories</h1>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit</p>
+        </div>
+        <div class="storyBtn">
+            <button>View all Post</button>
+        </div>
+    </div>
+
+    <div id="post">
+       
+    </div>
+ </section>
+
+
 
 
  <footer>
@@ -323,17 +413,20 @@
     
 <div class="signin" id="signinForm">
                 <div class="login-form">
+                    <div class="close">
+                        <i class="fa-regular fa-x" id="closeBtn"></i>
+                    </div>
                     <div class="infoText">
                     <h1>Login into your account</h1>
-                   <i class="fa-regular fa-x" id="closeBtn"></i>
+              
                     </div>
-                    <form action="" id="signinForm">
+                    <form action="" id="loginForm">
                         <input type="email" placeholder="Enter your email address" id="email-input" >
                         <input type="password" placeholder="Enter your password" id="password-input">
                       
                             <p id="error-signin"></p>
                       
-                        <input id="submit" type="submit" value="Sign in">
+                        <input id="submitSignin" class="signinSubmit" type="submit" value="Sign in">
 
                         <button class="google-signin">
                             <img src="./assets/images/google.png" alt="google">
@@ -352,22 +445,24 @@
                     </form>
                 </div>
 
-            </div>
+    </div>
 
 
-            <!-- sign up form -->
-            <div class="signup" id="signupForm">
+<!-- sign up form -->
+ <div class="signup" id="signupForm">
                 <div class="register-form">
+                    <div class="close">
+                    <i class="fa-regular fa-x" id="closeBtn2"> </i>
+                    </div>
                      <div class="infoText">
                     <h1>Create an account</h1>
-                   <i class="fa-regular fa-x" id="closeBtn2"> </i>
                     </div>
                     <form action="" id="registerForm">
                         <input type="text" placeholder="Enter Your firstname" id="firstname-input">
                         <input type="text" placeholder="Enter your lastname" id="lastname-input">
                         <input type="email" placeholder="Enter your email address" id="email-signup">
                         <input type="password" placeholder="Enter your password" id="password-signup">
-                        <input id="submit" type="submit" value="Sign Up">
+                        <input id="submit" class="signupSubmit" type="submit" value="Sign Up">
                                <p id="error-signup"></p>
 
                         <button class="google-signup">
@@ -387,10 +482,14 @@
                     </form>
                 </div>
 
-            </div>
+</div>
 
 
 
     <script src="./js/destination.js"></script>
+
+     <script>
+  AOS.init();
+</script>
 </body>
 </html>

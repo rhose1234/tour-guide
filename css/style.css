@@ -983,6 +983,7 @@ button.facebook-signup img{
     align-items: center;
     flex-direction: row;  
     gap: 20px;
+    text-decoration: none;
     /* padding: 10px 40px;  */
     
 }
@@ -1001,7 +1002,12 @@ button.facebook-signup img{
     border: none;
     border-radius: 50px;
     transition: ease-out 0.5s;
+    text-decoration: none;
 
+}
+.smartButtons .btn1 a, .btn2 a{
+    text-decoration: none;
+    color: #000000;
 }
 .smartButtons .btn1:hover, .btn2:hover{
         transform: scale(1.1);

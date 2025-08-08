@@ -7,6 +7,9 @@
     font-family: "Mulish", sans-serif;
 
 }
+body{
+    overflow-x: hidden;
+}
 /* desktop navigation bar starts */
 nav.desktop-nav{
     width: 100%;
@@ -341,8 +344,11 @@ nav.desktop-nav{
 
 
 .specialContainer{
-    padding: 100px 120px;
+    padding: 100px 100px  40px 100px;
+   
 }
+
+
 .specialContainer .special_first_heading{
     display: flex;
     flex-direction: row;
@@ -354,6 +360,22 @@ nav.desktop-nav{
     flex-direction: row;
     justify-content: flex-start;
     gap: 20px;
+}
+.special_first_heading .waterHeadingDiv {
+    background-color: #7BBCB0;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+    margin-top: 2px solid rgba(244, 244, 245, 1);
+}
+.special_first_heading .waterHeadingDiv:hover{
+    background-color: transparent;
+    border: 2px solid #7BBCB0;
+    color: #000000;
+    
 }
 .carouselIcons .fa-chevron-left{
     background-color: #FFDA32;
@@ -380,8 +402,465 @@ nav.desktop-nav{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    gap: 20px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0px 100px;
+}
+#specialContainerCards::-webkit-scrollbar{
+    display: none;
+}
+
+#specialContainerCards .waterActivitiesCard{
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-shrink: 0;
+    width: 250px;
+    transition: all 0.5s;
+}
+#specialContainerCards .waterActivitiesCard:hover{
+    transform: scaleX(1.1);
     
 }
+.waterActivityImage{
+    width: 230px;
+}
+
+.waterActivityHeading{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 10px 0px;
+    padding: 5px 10px ;
+}
+
+.waterFeatures{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: #495560;
+    font-size: 16px;
+}
+
+#specialContainerCards .ratingContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid rgba(244, 244, 245, 1);
+    padding: 20px 10px;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.waterActivityPrice{
+      color: #7BBCB0;
+    font-size: 30px;
+    font-family: "Volkhov", serif;
+}
+.waterPrice{
+    color: #495560;
+    text-align: center;
+    font-size: 15px;
+}
+.waterRatingNumber{
+    margin-top: 10px;
+    color: #495560;
+    font-size: 15px;
+}
+
+/* 
+special foods styling */
+
+.specialFoodsContainer{
+    padding: 100px 100px  40px 100px;
+   
+}
+
+
+.specialFoodsContainer .special_foods_heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+      margin-top: 2px solid red;
+}
+.special_foods_heading .carouselIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.special_foods_heading .foodsHeadingDiv {
+    background-color: #59A9FE;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+    margin-top: 2px solid rgba(244, 244, 245, 1);
+}
+.special_foods_heading .foodsHeadingDiv:hover{
+    background-color: transparent;
+    border: 2px solid #59A9FE;
+    color: #000000;
+    
+}
+.carouselIcons .fa-chevron-left{
+    background-color: #FFDA32;
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(238, 185, 11, 0.35) 0px 5px 15px;
+}
+.carouselIcons .fa-chevron-right{
+    background-color: transparent;
+    border: 1px solid #FFDA32;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+}
+#specialFoodsContainerCards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0px 100px;
+}
+#specialFoodsContainerCards::-webkit-scrollbar{
+    display: none;
+}
+
+#specialFoodsContainerCards .foodsActivitiesCard{
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-shrink: 0;
+    width: 250px;
+    transition: all 0.5s;
+    
+
+}
+#specialFoodsContainerCards .foodsActivitiesCard:hover{
+    transform: scaleX(1.1);
+    
+}
+.foodsActivityImage{
+    width: 230px;
+}
+
+.foodsActivityHeading{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 10px 0px;
+    padding: 5px 10px ;
+}
+
+.foodsFeatures{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: #495560;
+    font-size: 16px;
+}
+
+.ratingfoodsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid rgba(244, 244, 245, 1);
+    padding: 20px 10px;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.foodsActivityPrice{
+      color: #7BBCB0;
+    font-size: 30px;
+    font-family: "Volkhov", serif;
+}
+.foodsPrice{
+    color: #495560;
+    text-align: center;
+    font-size: 15px;
+}
+.foodsRatingNumber{
+    margin-top: 10px;
+    color: #495560;
+    font-size: 15px;
+}
+.foodsReviewDiv{
+    color: #FFDA32;
+}
+
+/* river activity styling */
+
+.riverActivityContainer{
+    padding: 100px 100px  40px 100px;
+   
+}
+
+
+.riverActivityContainer .river_activity_heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+      margin-top: 2px solid red;
+}
+.river_activity_heading .carouselIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.river_activity_heading .riverHeadingDiv {
+    background-color: #FF6969;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+    margin-top: 2px solid rgba(244, 244, 245, 1);
+}
+.river_activity_heading .riverHeadingDiv:hover{
+    background-color: transparent;
+    border: 2px solid #FF6969;
+    color: #000000;
+    
+}
+.carouselIcons .fa-chevron-left{
+    background-color: #FFDA32;
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(238, 185, 11, 0.35) 0px 5px 15px;
+}
+.carouselIcons .fa-chevron-right{
+    background-color: transparent;
+    border: 1px solid #FFDA32;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+}
+#riverContainerCards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0px 50px 100px 100px;
+}
+#riverContainerCards::-webkit-scrollbar{
+    display: none;
+}
+
+#riverContainerCards .riverActivitiesCard{
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-shrink: 0;
+    width: 250px;
+    transition: all 0.5s;
+    
+
+}
+#riverContainerCards .riverActivitiesCard:hover{
+    transform: scaleX(1.1);
+    
+}
+.riverActivityImage{
+    width: 230px;
+}
+
+.riverActivityHeading{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 10px 0px;
+    padding: 5px 10px ;
+}
+
+.riverFeatures{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: #495560;
+    font-size: 16px;
+}
+
+.ratingriverContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid rgba(244, 244, 245, 1);
+    padding: 20px 10px;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.riverActivityPrice{
+      color: #7BBCB0;
+    font-size: 30px;
+    font-family: "Volkhov", serif;
+}
+.riverPrice{
+    color: #495560;
+    text-align: center;
+    font-size: 15px;
+}
+.riverRatingNumber{
+    margin-top: 10px;
+    color: #495560;
+    font-size: 15px;
+}
+.riverReviewDiv{
+    color: #FFDA32;
+}
+
+#gallery{
+      padding: 30px 100px;
+}
+#gallery .galleryInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.galleryInfo .galleryText{
+    width: 500px;
+}
+.galleryText h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.galleryText p{
+    color: #778088;
+}
+.galleryInfo .galleryBtn button{
+    padding: 10px 30px;
+    color: #ffffff;
+    background-color: #495560;
+    border: none;
+}
+.galleryInfo .galleryBtn button:hover{
+    background-color: transparent;
+    border: 1px solid #495560;
+    color: #495560;
+}
+.galleryPictures{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+}
+.galleryPictures img{
+    width: 280px;
+    margin-top: 20px;
+    transition: ease-in-out 0.5s;
+    
+
+}
+.galleryPictures img:hover{
+    transform: scale(1.05);
+
+}
+#stories{
+     padding: 30px 100px;
+}
+#stories .storyInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.storyInfo .storyText{
+    width: 500px;
+}
+.storyInfo h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.storyInfo p{
+    color: #778088;
+}
+.storyInfo .storyBtn button{
+    padding: 10px 30px;
+    color: #ffffff;
+    background-color: #495560;
+    border: none;
+}
+.storyInfo .storyBtn button:hover{
+    background-color: transparent;
+    border: 1px solid #495560;
+    color: #495560;
+
+}
+#post{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 40px;
+}
+#post .blogCard{
+    background: none;
+}
+#post .blogImage{
+    width: 100%;
+
+}
+#post .blogHeading{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#post .authorDiv{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
  .signin{
 display: none;
   position: fixed;
@@ -401,6 +880,31 @@ display: none;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
     
 }
+.login-form .close {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: end;
+    position: absolute;
+    top: 9%;
+    right: 13%;
+    background-color: #7BBCB0;
+    padding: 5px;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+}
+.login-form .close i{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bolder;
+    position: relative;
+  
+    
+
+   
+}
+
 .login-form .infoText{
     display: flex;
     flex-direction: row;
@@ -427,8 +931,8 @@ form input{
     outline: none;
     border: 1px solid #495560;
 }
-#submit{
-    background-color: #7BBCB0;
+.signinSubmit{
+    background-color: #7BBCB0 !important;
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -483,27 +987,50 @@ button.facebook-signin img{
     color: #7BBCB0;
 }
 .blur {
-  filter: blur(2px);
+  filter: blur(5px);
 }
 
 /* sign up form */
  .signup{
   display: none;
   position: fixed;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 30px 50px;
+  padding: 30px 40px;
   z-index: 1000;
-  width: auto;
+  width: 40%;
+  margin: 10px 0px;
 
 }
 .signup .register-form{
     background-color: white;
-    padding: 50px 50px;
+    padding: 20px 50px;
     border-radius: 10px ;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
+}
+.register-form .close {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 7%;
+    right: 9%;
+    height: 25px;
+    width: 25px;
+    padding: 9px;
+    border-radius: 50%;
+        background-color: #7BBCB0;
+
+}
+.register-form .close i{
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+
 }
 .register-form .infoText{
     display: flex;
@@ -513,12 +1040,9 @@ button.facebook-signin img{
     gap: 30px;
     color: #7BBCB0;
 }
-.register-form .infoText i{
-    font-size: 15px;
-}
-.register-form .infoText h1{
+.register-form h1{
     color: #7BBCB0;
-    margin: 15px 0px;
+    margin: 20px 0px;
 }
 .register-form form {
     display: flex;
@@ -533,8 +1057,8 @@ form input{
     outline: none;
     border: 1px solid #495560;
 }
-#submit{
-    background-color: #7BBCB0;
+.signupSubmit{
+    background-color: #7BBCB0 !important;
     color: white;
     font-weight: bold;
     font-size: 16px;
