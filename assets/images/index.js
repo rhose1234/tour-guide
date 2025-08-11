@@ -410,9 +410,9 @@ closeBtn2.addEventListener("click", (e) => {
     errorSignup.style.fontSize = "14px";
     errorSignup.style.marginBottom = "10px"
 
-     if(firstnameValue === "" &&
-        lastnameValue === "" && 
-        signupEmailValue === "" &&  
+     if(firstnameValue === "" ||
+        lastnameValue === "" ||
+        signupEmailValue === "" ||  
         signupPasswordValue === "" ){
       errorSignup.textContent = "You have to fill the form please"
 
@@ -437,15 +437,14 @@ closeBtn2.addEventListener("click", (e) => {
         "Password must include uppercase, lowercase, number, and special character.";
     } 
     else {
-      errorSignup.style.color = "green";
-      errorSignup.textContent = "Signup successful!";
-      signinForm.style.display = "block"
 
+setTimeout(() => {
+  signupForm.style.display = "none";
+  signinForm.style.display = "block";
+  errorSignup.textContent = "Signup successful!, Redirecting to Login page";
+  errorSignup.style.color = "green";
+}, 1000);
 
-
-    
-      // registerForm.reset();
-    }
 
     const signupData = {
       firstname : firstnameValue,
@@ -454,6 +453,12 @@ closeBtn2.addEventListener("click", (e) => {
       password : signupPasswordValue
     }
   localStorage.setItem("signupData", JSON.stringify(signupData));
+
+    
+      // registerForm.reset();
+    }
+
+   
 
   });
 
@@ -476,7 +481,7 @@ loginForm.addEventListener("submit", (e) => {
   signinError.style.fontSize = "15px"
   signinError.textContent = ""
 
-  if (emailValue === "" && passwordValue === "") {
+  if (emailValue === "" || passwordValue === "") {
     signinError.textContent = "All fields required"
   } 
   else if (!storedData) {
@@ -487,10 +492,13 @@ loginForm.addEventListener("submit", (e) => {
     passwordValue !== storedData.password ) 
   {
     signinError.textContent = "Email or password is incorrect"
-  } else {
+  } 
+  else {
+  setTimeout(() => {
     signinError.style.color = "green"
-    signinError.textContent = "Login successful!"
+    signinError.textContent = "Login successful, redirecting to profile"
     window.location.href = "./profile.html"
+  }, 1000);
   }
 })
 

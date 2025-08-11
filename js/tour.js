@@ -1,33 +1,7 @@
-document.addEventListener("DOMContentLoaded",  () => {
+document.addEventListener("DOMContentLoaded", () => {
+    // /signin and signup popups
 
-const links = document.querySelectorAll(".mobilenav_Link")
-const mobileList = document.querySelector(".mobileList")
-
-const menu = document.querySelector("#hamburger")
-menu.addEventListener("click", () => { 
-    mobileList.classList.toggle("show")
-})
-
-links.forEach((item) => {
-        item.addEventListener("click", ()=> {
-            mobileList.classList.remove("show")
-        })
-        
-    })
-
-window.onscroll = function () {
-  const navbar = document.querySelector(".desktop-nav");
-  const mobile = document.querySelector(".mobile-nav")
-
-  if (window.scrollY > 50) {
-    navbar.classList.add("nav-scrolled");
-    mobile.classList.add("nav-scrolled")
-  } else {
-    navbar.classList.remove("nav-scrolled");
-    mobile.classList.remove("nav-scrolled")
-  }
-};
-
+// signin and signup popup forms
 const signinButton = document.querySelector("#signin")
 const signinForm = document.querySelector("#signinForm")
 const signupForm = document.querySelector("#signupForm")
@@ -192,4 +166,8 @@ loginForm.addEventListener("submit", (e) => {
   }
 })
 
+
+
+
+       
 })

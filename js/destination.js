@@ -1,5 +1,5 @@
 
-window.addEventListener("DOMContentLoaded", () => { 
+document.addEventListener("DOMContentLoaded", () => { 
 const activitiesInfo = [
     {
         tag : "WATER ACTIVITIES",
@@ -969,7 +969,7 @@ closeBtn2.addEventListener("click", (e) => {
       
 
 //signup validation
-  const registerForm = document.querySelector("#registerForm");
+  const registerForm = document.querySelector("#signupForm");
 
   const firstname = document.querySelector("#firstname-input");
   const lastname = document.querySelector("#lastname-input");
@@ -993,11 +993,11 @@ closeBtn2.addEventListener("click", (e) => {
     errorSignup.style.fontSize = "14px";
     errorSignup.style.marginBottom = "10px"
 
-     if(firstnameValue === "" &&
-        lastnameValue === "" && 
-        signupEmailValue === "" &&  
+     if(firstnameValue === "" ||
+        lastnameValue === "" ||
+        signupEmailValue === "" || 
         signupPasswordValue === "" ){
-      errorSignup.textContent = "You have to fill the form please"
+      errorSignup.textContent = "All fields required please"
 
     }
     else if (firstnameValue === "") {
@@ -1020,23 +1020,27 @@ closeBtn2.addEventListener("click", (e) => {
         "Password must include uppercase, lowercase, number, and special character.";
     } 
     else {
+   
       errorSignup.style.color = "green";
-      errorSignup.textContent = "Signup successful!";
+      errorSignup.textContent = "Signup successful! Redirecting to Login page...";
+       setTimeout(()=> {
       signinForm.style.display = "block"
+      signupForm.style.display = "none"
+    }, 2000)
+     
+     
 
-
-
-    
-      // registerForm.reset();
-    }
-
-    const signupData = {
+ const signupData = {
       firstname : firstnameValue,
       lastname : lastnameValue,
       email : signupEmailValue,
       password : signupPasswordValue
     }
   localStorage.setItem("signupData", JSON.stringify(signupData));
+registerForm.reset();
+    }
+
+   
 
   });
 
@@ -1059,7 +1063,7 @@ loginForm.addEventListener("submit", (e) => {
   signinError.style.fontSize = "15px"
   signinError.textContent = ""
 
-  if (emailValue === "" && passwordValue === "") {
+  if (emailValue === "" || passwordValue === "") {
     signinError.textContent = "All fields required"
   } 
   else if (!storedData) {
@@ -1072,8 +1076,10 @@ loginForm.addEventListener("submit", (e) => {
     signinError.textContent = "Email or password is incorrect"
   } else {
     signinError.style.color = "green"
-    signinError.textContent = "Login successful!"
+    signinError.textContent = "Login successful! redirecting to profile..."
+    setTimeout(()=> {
     window.location.href = "./profile.html"
+    }, 2000)
   }
 })
        

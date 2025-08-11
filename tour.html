@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/tour.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div id="pageContent">
+    <!---desktop navigation bar starts-->
+<nav class="desktop-nav">
+    <div id="logo">
+        <img src="./assets/images/blackLogo.svg" alt="logo">
+    </div>
+
+    <div>
+        <ul id="link-wrapper">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="About.html" class="nav-link">About Us</a></li>
+            <li><a href="destination.html" class="nav-link">Popular Destination</a></li>
+            <li><a href="#sectionCard" class="nav-link">Our Packages</a></li>
+            <li><a href="#footerDiv" class="nav-link">Help</a></li>
+        </ul>
+    </div>
+
+    <div id="signin-btn">
+         <button id="signin">Sign In</button>
+    </div>
+</nav>  
+<!---desktop navigation bar ends-->
+
+
+<!---mobile navigation bar starts-->
+<nav class="mobile-navigation">
+    <div class="mobile-nav">
+        <div id="logo">
+        <img src="./assets/images/blackLogo.svg" alt="logo">
+    </div>
+    <div id="hamburger">
+<i class="fa-solid fa-bars"></i> 
+
+</div>
+    </div>
+    <ul class="mobileList">
+            <li><a href="/" class="mobilenav_Link">Home</a></li>
+            <li><a href="/" class="mobilenav_Link">About Us</a></li>
+            <li><a href="#sectionCard2" class="mobilenav_Link">Popular Destination</a></li>
+            <li><a href="#sectionCard" class="mobilenav_Link">Our Packages</a></li>
+            <li><a href="#footerDiv" class="mobilenav_Link">Help</a></li>
+               <div id="signin-btn">
+         <button>Sign In</button>
+    </div>
+        </ul>
+</nav>
+<!---mobile navigation bar ends-->
+
+
+ <div class="pageTitle">
+    <h1>Vintage Double Decker Bus Tour & Thames River Cruise</h1>
+
+    <div class="infoDiv">
+        <div class="location">
+        <img src="./assets/images/location-icon.png" alt="">
+        <p>Gothenburg</p>
+        </div>
+
+        <div class="stars">
+            <i class="fa-solid fa-star" ></i>
+            <i class="fa-solid fa-star" ></i>
+            <i class="fa-solid fa-star" ></i>
+            <i class="fa-solid fa-star" ></i>
+            <i class="fa-solid fa-star" ></i>
+        </div>
+
+        <div class="reviews">
+            <p>(368 reviews)</p>
+        </div>
+    </div>
+
+    <div class="bookingDetails">
+
+        <div class="bookingImages">
+    <div class="mainImg">
+        <img src="./assets/images/booking_main.png" alt="">
+    </div>
+    <div class="smallImages">
+        <img src="./assets/images/box1.png" alt="">
+        <img src="./assets/images/box2.png" alt="">
+        <img src="./assets/images/box3.png" alt="">
+        <img src="./assets/images/box4.png" alt="">
+        <img src="./assets/images/box5.png" alt="">
+        <img src="./assets/images/box6.png" alt="">
+    </div>
+
+    <div class="bookingFeatures">
+        
+    </div>
+    </div>
+
+    <div class="bookingForm">
+
+        <div class="formHeading">
+            <h1>Booking</h1>
+        </div>
+        <form action="">
+            <label>From</label>
+            <input type="date" name="fromDate" id="">
+
+             <label>To</label>
+            <input type="date" name="toDate" id="">
+
+            <label>No of Guests?</label>
+            <select>
+                <option value="1 Adults">1 Adults</option>
+                <option value="2 Adults">2 Adults</option>
+                <option value="3 Adults">3 Adults</option>
+                <option value="4 Adults">4 Adults</option>
+                <option value="5 Adults">5 Adults</option>
+                <option value="6 Adults">6 Adults</option>
+            </select>
+        </form>
+
+    </div>
+
+    </div>
+
+    
+
+          
+      
+    </div>
+
+
+
+
+
+
+
+ <footer>
+    <div class="footerDiv" id="footerDiv">
+    <div class="div1">
+        <label for="Location">Location</label>
+        <select name="Language" id="language">
+              <option value="Location" disabled selected>Location</option>
+            <option value="LONDON">LONDON(UK)</option>
+              <option value="NIGERIA(NG)">NIGERIA(NG)</option>
+        </select>
+
+     <label for="currency">Currency</label>
+        <select name="currency" id="currency">
+            <option value="Currency" disabled selected>Currency</option>
+            <option value="US DOLLAR($)">US DOLLAR($)</option>
+            <option value="NAIRA($)">NAIRA($)</option>
+        </select>
+
+    </div>
+
+    <div class="div2">
+        <h5>Comapany</h5>
+        <a href="/">About Us</a>
+        <a href="/">Blog</a>
+        <a href="/">Press Room</a>
+        <a href="/">Careers</a>
+
+
+    </div>
+
+    <div class="div3">
+          <h5>Help</h5>
+        <a href="/">Contact Us</a>
+        <a href="/">FaQs</a>
+        <a href="/">Terms and Conditions</a>
+        <a href="/">Privacy Policy</a>
+        <a href="/">Sitemap</a>
+    </div>
+
+    <div class="div4">
+        <h5>Payment methods possible</h5>
+        <div class="payment_options">
+            <img src="./assets/images/mastercard.png" alt="mastercard">
+            <img src="./assets/images/bitpay.png" alt="bitpay" >
+            <img src="./assets/images/visa.png" alt="visa" >
+            <img src="./assets/images/americanexpress.png" alt="Express">
+            <img src="./assets/images/discover.png" alt="discover" >
+            <img src="./assets/images/sofort.png" alt="sofort" >
+            <img src="./assets/images/gpay.png" alt="gpay">
+            <img src="./assets/images/applepay.png" alt="applepay" >
+            <img src="./assets/images/paypal.png" alt="paypal">
+            <img src="./assets/images/maestro.png" alt="maestro">
+        </div>
+        <h5>Company</h5>
+        <a href="/">Become a Tour guide for Us</a>
+
+    </div>
+    </div>
+<div class="copyright">
+    <div class="copyrightText">
+<p>&copy; Copyright 2021 Tour Guide. All Rights Reserved</p>
+    </div>
+
+    <div class="social_Icons">
+        <img src="./assets/images/facebook.png" alt="facebook" >
+        <img src="./assets/images/twitter.png" alt="twitter">
+        <img src="./assets/images/instagram.png" alt="instagram" >
+        <img src="./assets/images/pinterest.png" alt="pinterest">
+
+    </div>
+</div>
+ </footer>
+</div>
+    
+<div class="signin" id="signinForm">
+                <div class="login-form">
+                    <div class="close">
+                        <i class="fa-regular fa-x" id="closeBtn"></i>
+                    </div>
+                    <div class="infoText">
+                    <h1>Login into your account</h1>
+              
+                    </div>
+                    <form action="" id="loginForm">
+                        <input type="email" placeholder="Enter your email address" id="email-input" >
+                        <input type="password" placeholder="Enter your password" id="password-input">
+                      
+                            <p id="error-signin"></p>
+                      
+                        <input id="submitSignin" class="signinSubmit" type="submit" value="Sign in">
+
+                        <button class="google-signin">
+                            <img src="./assets/images/google.png" alt="google">
+                            <p>Sign in with google</p>
+                        </button>
+
+                        <button class="facebook-signin">
+                            <img src="./assets/images/facebook.png" alt="facebook">
+                            <p>Sign in with facebook</p>
+                        </button>
+
+                        <div class="redirect-login">
+                            <p>Don't have an account?</p>
+                            <a href="" id="signUpLink">Sign up</a>
+                        </div>
+                    </form>
+                </div>
+
+    </div>
+
+
+
+
+<!-- sign up form -->
+ <div class="signup" id="signupForm">
+                <div class="register-form">
+                    <div class="close">
+                    <i class="fa-regular fa-x" id="closeBtn2"> </i>
+                    </div>
+                     <div class="infoText">
+                    <h1>Create an account</h1>
+                    </div>
+                    <form action="" id="registerForm">
+                        <input type="text" placeholder="Enter Your firstname" id="firstname-input">
+                        <input type="text" placeholder="Enter your lastname" id="lastname-input">
+                        <input type="email" placeholder="Enter your email address" id="email-signup">
+                        <input type="password" placeholder="Enter your password" id="password-signup">
+                        <input id="submit" class="signupSubmit" type="submit" value="Sign Up">
+                               <p id="error-signup"></p>
+
+                        <button class="google-signup">
+                            <img src="./assets/images/google.png" alt="google">
+                            <p>Sign up with google</p>
+                        </button>
+
+                        <button class="facebook-signup">
+                            <img src="./assets/images/facebook.png" alt="facebook">
+                            <p>Sign up with facebook</p>
+                        </button>
+
+                        <div class="redirect-signup">
+                            <p>Already have an account?</p>
+                            <a href="" id="signinLink">Log in</a>
+                        </div>
+                    </form>
+                </div>
+
+</div>
+
+
+
+    <script src="./js/tour.js"></script>
+
+     <script>
+  AOS.init();
+</script>
+</body>
+</html>
