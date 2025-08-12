@@ -771,8 +771,8 @@ button.facebook-signup img{
     background-image: url("../assets/images/wilderalaska.png");
     padding: 30px 40px;
     background-repeat: no-repeat;
-    background-position: cover;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     margin-top: 50px;
     height: auto;
     width: 100%;
@@ -962,8 +962,8 @@ button.facebook-signup img{
     padding: 50px 100px;
     flex: 0 0 100%;
     background-repeat: no-repeat;
-    background-position: cover;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     margin-top: 50px;
     height: auto;
     width: 100%;
@@ -1544,7 +1544,7 @@ footer{
     margin-top: 15px ; 
 }
 #sectionCard2{
-    flex-direction: column;
+    flex-direction: row;
     padding: 0px 30px;
 }
 .smartCity{
