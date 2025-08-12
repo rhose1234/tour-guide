@@ -154,6 +154,10 @@ activitiesInfo.map((item) => {
 const destinationCard = document.createElement("div")
 destinationCard.classList.add("destinationCard")
 
+destinationCard.addEventListener("click", () => {
+    window.location.href = "tour.html"
+})
+
 const destinationItem = document.createElement("div")
 destinationItem.classList.add("destinationItem")
 

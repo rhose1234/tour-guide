@@ -91,7 +91,7 @@ const cards = [
     },
     {
         image : "./assets/images/londonmagic.png",
-        title: "Alaska: Magic of London Tour with Afternoon Tea at Boat",
+        title: "Alaska: Magic of London Tour with Afternoon Tea Boat",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -105,7 +105,7 @@ const cards = [
     },
      {
         image : "./assets/images/afternoontea.png",
-        title: "Alaska: Magic of London Tour with Afternoon Tea at Ark",
+        title: "Alaska: Magic of London Tour with Afternoon Tea Ark",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -287,7 +287,7 @@ const posts = [
 },
 {
     heading : "How to Fix Your Sleep Schedule: 7 Easy Ways",
-    image: "../assets/images/blog2.png",
+    image: "../assets/images/blog3.png",
     author : "../assets/images/author.png",
     name : "Jackie Moncada"
 },
