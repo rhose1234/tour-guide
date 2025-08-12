@@ -1061,17 +1061,17 @@ button.facebook-signup img{
     color: #495560;
 }
 .galleryPictures{
-    display: flex;
-    justify-content: space-between;
+     display: flex;
+    justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 30px;
-    gap: 0px;
+    gap: 10px;
+    width: 100%
     
 }
 .galleryPictures img{
-    width: 280px;
-    max-width: 280px;
+     width: 315px;
     margin-top: 20px;
     transition: ease-in-out 0.5s;
     
