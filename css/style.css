@@ -690,6 +690,8 @@ button.facebook-signup img{
     background-color: #FFFFFF;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    width: auto;
+    height: auto;
 }
 #sectionCard .card:hover{
         transform: scale(1.1);
@@ -700,6 +702,10 @@ button.facebook-signup img{
     padding: 10px;
     
 }
+#sectionCard .cardImage img{
+    width: 500px;
+}
+
 #sectionCard .cardHeading{
     font-size: 20px;
     padding: 10px 20px;
@@ -708,7 +714,7 @@ button.facebook-signup img{
 .iconText {
     color: #495560;
      padding: 10px 20px 25px 25px;
-     border-bottom: 1px solid #495560;
+     border-bottom: 2px solid #f5f4f5;
 }
 .iconText .timeDiv, .movementDiv, .personDiv{
     display: flex;
@@ -717,6 +723,7 @@ button.facebook-signup img{
     flex-direction: row;
     align-items: center;
     margin-top: 10px;
+    font-size: 15px;
 }
 .ratingSection{
     display: flex;
@@ -763,14 +770,14 @@ button.facebook-signup img{
 .wilderLife{
     background-image: url("../assets/images/wilderalaska.png");
     padding: 30px 40px;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: cover;
     background-size: contain;
     margin-top: 50px;
     height: auto;
     width: 100%;
     max-width: 100%;
-      flex: 0 0 100%;
+    flex: 0 0 100%;
 
 }
 .trending h5{
@@ -1059,11 +1066,12 @@ button.facebook-signup img{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 30px;
+    gap: 0px;
     
 }
 .galleryPictures img{
     width: 280px;
-    min-width: 280px;
+    max-width: 280px;
     margin-top: 20px;
     transition: ease-in-out 0.5s;
     
@@ -1114,12 +1122,15 @@ button.facebook-signup img{
     margin-top: 40px;
 }
 #post .blogCard{
-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;}
+box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
 #post .blogImage{
     width: 100%;
-    min-width: 100%;
-
-
+    max-width: 100%;
+}
+#post .blogImage img{
+    width: 100%;
+    max-width: 100%;
 }
 #post .blogHeading{
     font-size: 20px;
