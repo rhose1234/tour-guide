@@ -18,6 +18,22 @@ links.forEach((item) => {
         
     })
 
+
+    //onscroll navbar color change
+window.onscroll = function () {
+  const navbar = document.querySelector(".desktop-nav");
+  const mobile = document.querySelector(".mobile-nav")
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("nav-scrolled");
+    mobile.classList.add("nav-scrolled")
+  } else {
+    navbar.classList.remove("nav-scrolled");
+    mobile.classList.remove("nav-scrolled")
+  }
+};
+
+
 //to play video on click of the button
 // const video = document.querySelector("#bg-video")
 // const playBtn = document.querySelector("#playBtn")
@@ -49,19 +65,7 @@ boxItems.forEach((city) => {
     
 })
 
-//onscroll navbar color change
-window.onscroll = function () {
-  const navbar = document.querySelector(".desktop-nav");
-  const mobile = document.querySelector(".mobile-nav")
 
-  if (window.scrollY > 50) {
-    navbar.classList.add("nav-scrolled");
-    mobile.classList.add("nav-scrolled")
-  } else {
-    navbar.classList.remove("nav-scrolled");
-    mobile.classList.remove("nav-scrolled")
-  }
-};
 
 const cards = [
     {

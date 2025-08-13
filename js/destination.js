@@ -1,5 +1,39 @@
 
 document.addEventListener("DOMContentLoaded", () => { 
+
+    //mobile navigation responsiveness
+const links = document.querySelectorAll(".mobilenav_Link")
+const mobileList = document.querySelector(".mobileList")
+const body = document.body
+
+const menu = document.querySelector("#hamburger")
+menu.addEventListener("click", () => { 
+    mobileList.classList.toggle("show")
+      body.classList.toggle('no-scroll');
+
+})
+
+links.forEach((item) => {
+        item.addEventListener("click", ()=> {
+            mobileList.classList.remove("show")
+        })
+        
+    })
+
+//onscroll navbar color change
+window.onscroll = function () {
+  const navbar = document.querySelector(".desktop-nav");
+  const mobile = document.querySelector(".mobile-nav")
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("nav-scrolled");
+    mobile.classList.add("nav-scrolled")
+  } else {
+    navbar.classList.remove("nav-scrolled");
+    mobile.classList.remove("nav-scrolled")
+  }
+};
+
 const activitiesInfo = [
     {
         tag : "WATER ACTIVITIES",
@@ -899,6 +933,7 @@ posts.map((blog) => {
     const blogImage = document.createElement("img")
     blogImage.src = blog.image
     blogImage.alt = blog.heading
+    blogImage.classList.add("blogImage")
 
     const blogHeading = document.createElement("h1")
     blogHeading.classList.add("blogHeading")
