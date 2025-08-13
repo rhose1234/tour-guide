@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded",  () => {
 
+//mobile navigation responsiveness
 const links = document.querySelectorAll(".mobilenav_Link")
 const mobileList = document.querySelector(".mobileList")
+const body = document.body
 
 const menu = document.querySelector("#hamburger")
 menu.addEventListener("click", () => { 
     mobileList.classList.toggle("show")
+      body.classList.toggle('no-scroll');
+
 })
 
 links.forEach((item) => {

@@ -2,10 +2,13 @@ document.addEventListener("DOMContentLoaded", () =>  {
 //mobile navigation responsiveness
 const links = document.querySelectorAll(".mobilenav_Link")
 const mobileList = document.querySelector(".mobileList")
+const body = document.body
 
 const menu = document.querySelector("#hamburger")
 menu.addEventListener("click", () => { 
     mobileList.classList.toggle("show")
+      body.classList.toggle('no-scroll');
+
 })
 
 links.forEach((item) => {
@@ -287,7 +290,7 @@ const posts = [
 },
 {
     heading : "How to Fix Your Sleep Schedule: 7 Easy Ways",
-    image: "../assets/images/blog3.png",
+    image: "../assets/images/blog2.png",
     author : "../assets/images/author.png",
     name : "Jackie Moncada"
 },
@@ -315,6 +318,7 @@ posts.map((blog) => {
     const blogImage = document.createElement("img")
     blogImage.src = blog.image
     blogImage.alt = blog.heading
+    blogImage.classList.add("blogImage")
 
     const blogHeading = document.createElement("h1")
     blogHeading.classList.add("blogHeading")

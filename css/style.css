@@ -1123,14 +1123,15 @@ button.facebook-signup img{
 }
 #post .blogCard{
 box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+/* filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5)); */
 }
-#post .blogImage{
+ #post .blogImage{
     width: 100%;
-    max-width: 100%;
-}
-#post .blogImage img{
-    width: 100%;
-    max-width: 100%;
+    max-width: 100%; 
+ }
+
+#post .blogCard .blogImage{
+    width: 280px;
 }
 #post .blogHeading{
     font-size: 20px;
@@ -1261,6 +1262,10 @@ footer{
     body{
         overflow-x: hidden;
     }
+    body.no-scroll {
+  overflow: hidden;
+  height: 100vh; 
+}
     /* mobile navigation starts */
      nav.desktop-nav{
         display: none;
@@ -1280,7 +1285,6 @@ footer{
        position: fixed;
        background-color: none;
        padding: 20px 30px;
-       /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
        z-index: 8;
     }
     .mobile-nav #hamburger{
@@ -1288,21 +1292,23 @@ footer{
         font-size: 20px;
     }
     .mobileList {
-        
+       
         background-color: white; 
         display: none;      
           
     }
     .mobileList.show{
-        /* position: relative; */
-        height: 100vh;
+        position: fixed;
+        top: 60px;
+        left: 0%;
+        height: 50vh;
         width: 100%; 
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        transform: scaleX(100%);
         margin: 0px 30px 30px 0px;
-        z-index: 2;
+        z-index: 999;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
      .mobileList li{
         margin-top: 40px;
@@ -1458,16 +1464,15 @@ footer{
 }
 .wilderLife{
     background-image: url("../assets/images/wilderalaska.png");
-    padding: 10px 20px;
+    padding: 10px 10px;
      background-repeat: no-repeat;
-    background-position: cover;
-    background-size: contain;
+   background-size: cover;
+    background-position: center;
     margin-top: 50px;
     height: auto;
     width: 100%;
 }
 .wilderLife .trending h5{
-    
     padding: 5px 10px;
     width: 100px;
     font-size: 9px;
@@ -1545,15 +1550,15 @@ footer{
 }
 #sectionCard2{
     flex-direction: row;
-    padding: 0px 30px;
+    padding: 0px 10px;
 }
 .smartCity{
-    padding: 10px 20px;
+    padding: 10px 10px;
     width: 100%;
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 }
 .smartCity-img{
     display: flex;
@@ -1561,7 +1566,7 @@ footer{
     align-items: center;
 }
 .smartCity-img img{
-    width: 300px;
+    width: 230px;
 }
 
 .smartCityDiv h1{
@@ -1614,20 +1619,30 @@ footer{
     width: 100%;
 }
 
+
+
 #stories{
      padding: 30px 30px;
 }
 #stories .storyInfo{
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+
 }
 .storyInfo .storyText{
-    width: 100%;
+    width: 350px;
+    min-width: 350px;
+    
 }
 .storyInfo h1{
     margin-bottom: 10px;
 }
 .storyInfo p{
     color: #778088;
+    
 }
 .storyInfo .storyBtn button{
     margin: 10px 0px;
@@ -1635,7 +1650,8 @@ footer{
 
 #post{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
     flex-direction: column;
     gap: 40px;
     margin-top: 40px;
@@ -1645,6 +1661,10 @@ footer{
 #post .blogHeading{
     font-size: 15px;
     margin: 5px 0px;
+    
+}
+#post .blogCard .blogImage{
+    width: 500px;
 }
 #post .authorDiv{
     display: flex;
