@@ -348,6 +348,7 @@ post.appendChild(blogCard)
 
 // signin and signup popup forms
 const signinButton = document.querySelector("#signin")
+const signinButtonMobile = document.querySelector("#signinMobile")
 
 const signinForm = document.querySelector("#signinForm")
 const signupForm = document.querySelector("#signupForm")
@@ -357,6 +358,13 @@ const signinLink = document.querySelector("#signinLink")
 const pageContent = document.querySelector("#pageContent")
 const closeBtn = document.querySelector("#closeBtn")
 const closeBtn2 = document.querySelector("#closeBtn2")
+
+signinButtonMobile.addEventListener("click", (e) => {
+  e.preventDefault()
+  signinForm.style.display = "block"
+  signupForm.style.display = "none"
+   pageContent.classList.add("blur")
+})
 
 
 signinButton.addEventListener("click", (e) => {

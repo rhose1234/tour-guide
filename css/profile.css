@@ -574,8 +574,7 @@ button.facebook-signup img{
 }
 
 
-/* 
- mobile device styling */
+/*  mobile device styling */
 @media (min-width: 320px) and (max-width: 480px)  {
 
     body{
@@ -643,9 +642,7 @@ button.facebook-signup img{
         color: #000000;
         font-size: 15px;
      }
-
-
-     footer{
+footer{
     width: 100%;
 }
 .footerDiv{
@@ -662,5 +659,4 @@ button.facebook-signup img{
     padding: 20px 0px ;
 
 }
-
-    }
+}
