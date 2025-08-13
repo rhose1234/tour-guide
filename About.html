@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us- We Find The Best Tours For You</title>
     <link rel="stylesheet" href="./css/about.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -14,9 +15,11 @@
 
 <!---desktop navigation bar starts-->
 <nav class="desktop-nav">
+    <a href="index.html">
     <div id="logo">
         <img src="./assets/images/logo.svg" alt="logo">
     </div>
+    </a>
 
     <div>
         <ul id="link-wrapper">
@@ -38,17 +41,19 @@
 <!---mobile navigation bar starts-->
 <nav class="mobile-navigation">
     <div class="mobile-nav">
-        <div id="logo">
+        <a href="index.html">
+    <div id="logo">
         <img src="./assets/images/logo.svg" alt="logo">
     </div>
+    </a>
     <div id="hamburger">
 <i class="fa-solid fa-bars"></i> 
 
 </div>
     </div>
     <ul class="mobileList">
-            <li><a href="/" class="mobilenav_Link">Home</a></li>
-            <li><a href="/" class="mobilenav_Link">About Us</a></li>
+            <li><a href="index.html" class="mobilenav_Link">Home</a></li>
+            <li><a href="about.html" class="mobilenav_Link">About Us</a></li>
             <li><a href="destination.html" class="mobilenav_Link">Popular Destination</a></li>
             <li><a href="#sectionCard" class="mobilenav_Link">Our Packages</a></li>
             <li><a href="#footerDiv" class="mobilenav_Link">Help</a></li>
@@ -59,7 +64,7 @@
 </nav>
 <!---mobile navigation bar starts-->
 
-<section>
+<section data-aos="zoom-out-up">
     <div class="hero_Section">
         <div class="video_background">
             <video id="bg-video" src="./assets/images/bg-vidwo.mp4"  autoplay loop muted playsinline loading="lazy" >
@@ -74,22 +79,22 @@
     </div>
  </section>
 
- <section>
+  <section>
     <div class="featuresContainer">
-        <div class="featuresBox">
+        <div class="featuresBox" data-aos="fade-up">
             <img src="./assets/images/teamwork.png" alt="teamwork icon">
             <h4>Great team work</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.. </p>
         </div>
 
-        <div class="featuresBox">
+        <div class="featuresBox" data-aos="fade-left">
             <img src="./assets/images/vision.png" alt="vision">
             <h4>Our vision</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.. </p>
             
         </div>
 
-        <div class="featuresBox">
+        <div class="featuresBox" data-aos="fade-right">
             <img src="./assets/images/mission.png" alt="mission">
             <h4>Our mision</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.. </p>
@@ -98,13 +103,13 @@
     </div>
  </section>
 
- <section>
+  <section> 
     <div class="toutText">
-        <div class="guideImg">
+        <div class="guideImg" data-aos="zoom-out">
         <img src="./assets/images/tour.png" alt="tour gude">
         </div>
 
-        <div>
+        <div data-aos="zoom-out-up">
             <img src="./assets/images/exclamation.png" alt="">
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor sapien et urna tincidunt fringilla. Vivamus at augue interdum, blandit arcu quis, laoreet ipsum. In eu ipsum urna. Suspendisse suscipit est et neque.</p>
@@ -115,9 +120,9 @@
             <span>Founder TourGuide</span>
         </div>
     </div>
- </section>
+ </section> 
 
- <section>
+ <section data-aos="flip-right">
     <div class="subscribe">
         <h1>Subscribe To Get Special Prices</h1>
        
@@ -129,9 +134,9 @@
             </form>
         </div>
     </div>
- </section>
+ </section> 
 
- <footer>
+ <footer data-aos="zoom-out-up">
     <div class="footerDiv" id="footerDiv">
     <div class="div1">
         <label for="Location">Location</label>
@@ -281,6 +286,16 @@
 
 
     <script src="./js/about.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+  AOS.init({
+
+      once: true,
+    duration: 800
+  });
+
+</script>
 </body>
 </html>
 

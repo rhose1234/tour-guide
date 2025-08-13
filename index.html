@@ -22,7 +22,7 @@
 
     <div>
         <ul id="link-wrapper">
-            <li><a href="/" class="nav-link active">Home</a></li>
+            <li><a href="index.html" class="nav-link active">Home</a></li>
             <li><a href="About.html" class="nav-link">About Us</a></li>
             <li><a href="destination.html" class="nav-link">Popular Destination</a></li>
             <li><a href="#sectionCard" class="nav-link">Our Packages</a></li>
@@ -40,9 +40,11 @@
 <!---mobile navigation bar starts-->
 <nav class="mobile-navigation">
     <div class="mobile-nav">
-        <div id="logo">
+       <a href="index.html">
+    <div id="logo">
         <img src="./assets/images/logo.svg" alt="logo">
     </div>
+    </a>
     <div id="hamburger">
 <i class="fa-solid fa-bars"></i> 
 
@@ -63,7 +65,7 @@
 
 
 <!-- hero section starts -->
- <section>
+ <section data-aos="fade-in" data-aos-easing="linear">
     <div class="hero_Section">
         <div class="video_background">
             <video id="bg-video" src="./assets/images/bg-vidwo.mp4"  autoplay loop muted playsinline loading="lazy" >
@@ -319,7 +321,7 @@
         </div>
     </div>
 
-    <div id="post">
+    <div id="post" data-aos="fade-up">
        
     </div>
  </section> 

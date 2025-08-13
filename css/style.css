@@ -1257,7 +1257,7 @@ footer{
 
 /* 
  mobile device styling */
-@media (min-width: 360px) and (max-width: 480px)  {
+@media (min-width: 320px) and (max-width: 480px)  {
 
     body{
         overflow-x: hidden;
@@ -1622,7 +1622,7 @@ footer{
 
 
 #stories{
-     padding: 30px 30px;
+     padding: 20px 30px;
 }
 #stories .storyInfo{
     display: flex;
@@ -1630,11 +1630,13 @@ footer{
     align-items: start;
     flex-direction: column;
     gap: 10px;
+     padding: 20px 20px;
 
 }
 .storyInfo .storyText{
     width: 350px;
     min-width: 350px;
+   
     
 }
 .storyInfo h1{
