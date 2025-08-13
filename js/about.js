@@ -196,4 +196,36 @@ loginForm.addEventListener("submit", (e) => {
   }
 })
 
+const subscribeForm = document.querySelector("#subscribeForm")
+const userEmail = document.querySelector("#userEmail")
+const errorMsg = document.querySelector("#errorMsg")
+
+
+errorMsg.textContent = ""
+errorMsg.style.color = "red"
+errorMsg.style.fontSize = "14px"
+errorMsg.style.marginBottom = "10px"
+errorMsg.style.textAlign = "center"
+
+
+subscribeForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  const userEmailValue = userEmail.value.trim()
+
+  if(userEmailValue === ""){
+   errorMsg.textContent = "Please Enter Your Email Address to subscribe"
+  }
+  else{
+    errorMsg.style.color = "green"
+    errorMsg.textContent = "Thank You For Subscribing 😇, Flex on"
+
+    setTimeout(()=> {
+      errorMsg.textContent = ""
+    }, 2000)
+  }
+
+  subscribeForm.reset()
+})
+
 })
