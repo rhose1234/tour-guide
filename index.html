@@ -51,7 +51,7 @@
 </div>
     </div>
     <ul class="mobileList">
-            <li><a href="index.html" class="mobilenav_Link">Home</a></li>
+            <li><a href="index.html" class="mobilenav_Link active">Home</a></li>
             <li><a href="about.html" class="mobilenav_Link">About Us</a></li>
             <li><a href="destination.html" class="mobilenav_Link">Popular Destination</a></li>
             <li><a href="#sectionCard" class="mobilenav_Link">Our Packages</a></li>
@@ -84,15 +84,20 @@
                     <h5>Watch Video</h5>
                 </div> -->
             </div>
+     
+           
 
             <div class="box">
+                 <form id="locationSearch">
+                <div class="box-inner">
+                     
                 <div class="location">
                     <div class="inner">
                     <i class="fa-solid fa-location-dot"></i>
                     <h5>Location</h5>
                     </div>
 
-                    <input type="text" placeholder="Search For A Destination">
+                    <input type="text" placeholder="Search For A Destination" id="locationInput">
                 </div>
 
                 <div class="guest">
@@ -101,7 +106,7 @@
                     <h5>Guest</h5>
                    
                     </div>
-                    <input  type="number" placeholder="How many Guests?" />
+                    <input  type="number" placeholder="How many Guests?"  id="guestInput"/>
                 </div>
 
                 <div class="date">
@@ -109,14 +114,23 @@
                     <i class="fa-solid fa-calendar-days date"></i>
                     <h5>Date</h5>
                     </div>
-                    <input type="text" placeholder="Pick a Date"/>
+                    <input type="date" placeholder="Pick a Date" id="dateInput"/>
                 </div>
 
                 <div class="search">
                     <button>Search</button>
                 </div>
+               
+                </div>
+                 <p id="results"></p>
+                
+                
+                </form>
+                
             </div>
-        </div>
+
+             </div>
+       
     </div>
  </section>
 

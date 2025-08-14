@@ -38,7 +38,7 @@ const activitiesInfo = [
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activty1.png",
-        title : "Westminster to Greenwich River Thames",
+        title : "Westminster to Greenwich London",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -48,13 +48,14 @@ const activitiesInfo = [
         star : "fa-solid fa-star",
         price : "$35.00",
          review : "(584 reviews)",
-        person : "per person"
+        person : "per person",
+        date: "2025-08-07"
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity4.png",
-        title : "Westminster to Greenwich River Thames",
+        title : "Westminster to Greenwich New York",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -64,13 +65,14 @@ const activitiesInfo = [
         star : "fa-solid fa-star",
         price : "$35.00",
          review : "(584 reviews)",
-        person : "per person"
+        person : "per person",
+        date: "2025-08-08"
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activty3.png",
-        title : "Westminster to Greenwich River Thames",
+        title : "Westminster to Greenwich Alaska",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -80,13 +82,14 @@ const activitiesInfo = [
         star : "fa-solid fa-star",
         price : "$35.00",
          review : "(584 reviews)",
-        person : "per person"
+        person : "per person",
+        date: "2025-08-09"
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity4.png",
-        title : "Westminster to Greenwich River Thames",
+        title : "Westminster to Greenwich Tokyo",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -96,13 +99,14 @@ const activitiesInfo = [
         star : "fa-solid fa-star",
         price : "$35.00",
          review : "(584 reviews)",
-        person : "per person"
+        person : "per person",
+        date: "2025-08-10"
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity5.png",
-        title : "Westminster to Greenwich River Thames",
+        title : "Westminster to Greenwich River Paris",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -112,13 +116,14 @@ const activitiesInfo = [
         star : "fa-solid fa-star",
         price : "$35.00",
          review : "(584 reviews)",
-        person : "per person"
+        person : "per person",
+        date: "2025-08-11"
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activty6.png",
-        title : "Westminster to Greenwich River Thames",
+        title : "Westminster to Greenwich Egypt",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -128,13 +133,14 @@ const activitiesInfo = [
         star : "fa-solid fa-star",
         price : "$35.00",
          review : "(584 reviews)",
-        person : "per person"
+        person : "per person",
+        date: "2025-08-12"
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity7.png",
-        title : "Westminster to Greenwich River Thames",
+        title : "Westminster to Greenwich Germany",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -144,13 +150,14 @@ const activitiesInfo = [
         star : "fa-solid fa-star",
         price : "$35.00",
          review : "(584 reviews)",
-        person : "per person"
+        person : "per person",
+        date: "2025-08-13"
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity8.png",
-        title : "Westminster to Greenwich River Thames",
+        title : "Westminster to Greenwich Nigeria",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -160,13 +167,15 @@ const activitiesInfo = [
         star : "fa-solid fa-star",
         price : "$35.00",
          review : "(584 reviews)",
-        person : "per person"
+        person : "per person",
+        date: "2025-08-14"
+
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity9.png",
-        title : "Westminster to Greenwich River Thames",
+        title : "Westminster to Greenwich River Dubia",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -176,11 +185,11 @@ const activitiesInfo = [
         star : "fa-solid fa-star",
         price : "$35.00",
         review : "(584 reviews)",
-        person : "per person"
+        person : "per person",
+         date: "2025-08-15"
         
     }
 ]
-
 const destinationContainer = document.querySelector("#destinationContainer")
 
 activitiesInfo.map((item) => {
@@ -291,11 +300,11 @@ activityFeatures.append(activityFeature1, activityFeature2, activityFeature3)
 destinationDetailsContainer.append(destinationActivity, destinationTitle, activityFeatures)
 })
 
-const LoadMoreBtn = document.createElement("button")
-LoadMoreBtn.textContent = "Load More"
-LoadMoreBtn.classList.add("loadMoreBtn")
+// const LoadMoreBtn = document.createElement("button")
+// LoadMoreBtn.textContent = "Load More"
+// LoadMoreBtn.classList.add("loadMoreBtn")
 
-destinationContainer.appendChild(LoadMoreBtn)
+// destinationContainer.appendChild(LoadMoreBtn)
 
 
 // food activities cards and section
@@ -391,6 +400,9 @@ const waterActivitiesDetails = [
 
     }
 ]
+
+
+const availabilityForm = document.querySelector("availabilityForm")
 
 const specialContainerCards = document.querySelector("#specialContainerCards")
 

@@ -21,7 +21,7 @@
         <ul id="link-wrapper">
             <li><a href="index.html" class="nav-link">Home</a></li>
             <li><a href="about.html" class="nav-link">About Us</a></li>
-            <li><a href="destination.html" class="nav-link">Popular Destination</a></li>
+            <li><a href="destination.html" class="nav-link active">Popular Destination</a></li>
             <li><a href="#sectionCard" class="nav-link">Our Packages</a></li>
             <li><a href="#footerDiv" class="nav-link">Help</a></li>
         </ul>
@@ -50,7 +50,7 @@
     <ul class="mobileList">
             <li><a href="index.html" class="mobilenav_Link">Home</a></li>
             <li><a href="about.html" class="mobilenav_Link">About Us</a></li>
-            <li><a href="#sectionCard2" class="mobilenav_Link">Popular Destination</a></li>
+            <li><a href="#sectionCard2" class="mobilenav_Link active">Popular Destination</a></li>
             <li><a href="#sectionCard" class="mobilenav_Link">Our Packages</a></li>
             <li><a href="#footerDiv" class="mobilenav_Link">Help</a></li>
                <div id="signin-btn">
@@ -84,14 +84,14 @@
             <h3>Availability</h3>
         </div>
         <div class="availabiltyForm">
-            <form action=" Get">
+            <form action="" id="availabilityForm">
             <label for="from">From</label>
-            <input type="date" >
+            <input type="date" id="fromDateInput" >
 
             <label for="to">To</label>
-            <input type="date">
+            <input type="date" id="toDateInput">
 
-            <button type="submit">Check Availability</button>
+            <button type="submit" id="availabilitySubmit">Check Availability</button>
             </form>
         </div>
     </div>
@@ -110,12 +110,12 @@
          
             <div class="">
             <input type="checkbox">
-            <label for="distanving">Good for social distancing</label>
+            <label for="distanving">River Activities</label>
             </div>
 
             <div class="">
             <input type="checkbox">
-            <label for="Adrenaline">Adrenaline</label>
+            <label for="Adrenaline">Special Foods</label>
             </div>
 
             <div class="">

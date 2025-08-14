@@ -433,16 +433,18 @@ button.facebook-signup img{
 .box{
     position: absolute;
     bottom: 3%;
-    display: flex;
-    justify-content: space-between;
     left: 10% ;
     background-color: #ffffff ;
     padding: 30px 50px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 5;
-    gap: 20px;
     width: 80%;
+}
+.box .box-inner{
+ display: flex;
+    justify-content: space-between;
+        gap: 20px;
 }
 .box .location{
     color: #7BBCB0;
@@ -1374,18 +1376,22 @@ footer{
 .box{
     position: absolute;
     top: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+   
     left: 10% ;
     background-color: #ffffff ;
     padding: 30px 40px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 10;
-    gap: 10px;
+   
     width: 80%;
     font-size: 15px;
+}
+.box .box-inner{
+ display: flex;
+    justify-content: space-between;
+        gap: 10px;
+         flex-direction: column;
 }
 .second-section{
   

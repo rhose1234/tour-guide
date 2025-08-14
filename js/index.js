@@ -1,4 +1,121 @@
 document.addEventListener("DOMContentLoaded", () =>  {
+
+  const destinationData = [
+    {
+        location : "Westminster to Greenwich London",
+        date: "2025-08-07",
+         guest: 10
+    },
+    {
+      
+        location : "Westminster to Greenwich New York",
+        date: "2025-08-08",
+         guest: 10
+        
+    },
+    {
+        location : "Westminster to Greenwich Alaska",
+        date: "2025-08-09",
+         guest: 10
+    },
+    {
+        location : "Westminster to Greenwich Tokyo",
+        date: "2025-08-10",
+         guest: 10
+        
+    },
+    {
+       
+        location : "Westminster to Greenwich River Sidney",
+        date: "2025-08-11",
+        guest: 10
+        
+    },
+    {
+        location : "Westminster to Greenwich Carlifonia",
+        date: "2025-08-12",
+        guest: 10
+        
+    },
+    {
+        location : "Westminster to Greenwich Dehli",
+        date: "2025-08-13",
+         guest: 10
+        
+    },
+    {
+        location : "Westminster to Greenwich Nigeria",
+        date: "2025-08-14",
+        guest: 10    
+    },
+    {
+        location : "Westminster to Greenwich River Dubia",
+         date: "2025-08-15",
+         guest: 10
+        
+    },
+    {
+        location : "Westminster to Greenwich River Tokyo",
+         date: "2025-08-16",
+         guest: 10
+        
+    }
+]
+
+const locationSearch = document.querySelector("#locationSearch")
+const locationInput = document.querySelector("#locationInput")
+const guestInput = document.querySelector("#guestInput")
+const dateInput = document.querySelector("#dateInput")
+const resultsDiv =  document.querySelector("#results")
+resultsDiv.textAlign = "center"
+
+locationSearch.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const locationInputValue = locationInput.value.trim();
+  const guestInputValue = guestInput.value.trim();
+  const dateInputValue = dateInput.value.trim();
+
+if (locationInputValue === "" && guestInputValue === "" && dateInputValue === "") {
+  resultsDiv.innerHTML = "one search at least";
+  resultsDiv.style.color = "red";
+  resultsDiv.style.fontWeight = "bold";
+} else {
+  const filteredResults = destinationData.filter((result) => {
+    const locationMatch = locationInputValue === "" ||
+      result.location.toLowerCase().includes(locationInputValue.toLowerCase());
+
+    const guestMatch = guestInputValue === "" ||
+      Number(guestInputValue) <= result.guest;
+
+    const dateMatch = dateInputValue === "" ||
+      result.date === dateInputValue;
+
+    return locationMatch && guestMatch && dateMatch;
+  });
+
+  if (filteredResults.length > 0) {
+    resultsDiv.innerHTML = filteredResults.map(output => `
+      <p><strong>${output.location}</strong> - ${output.guest} guests - ${output.date}</p> You can book now
+    `).join("");
+
+    resultsDiv.style.color = "green";
+    resultsDiv.style.fontWeight = "bold";
+    setTimeout(() => {
+      window.location.href = "destination.html";
+    }, 2000);
+
+  } else {
+    resultsDiv.innerHTML = "<p>No results found.</p>";
+    resultsDiv.style.color = "red";
+    resultsDiv.style.fontWeight = "bold";
+  }
+}
+})
+
+
+
+
 //mobile navigation responsiveness
 const links = document.querySelectorAll(".mobilenav_Link")
 const mobileList = document.querySelector(".mobileList")
