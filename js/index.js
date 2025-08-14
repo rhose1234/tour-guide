@@ -81,15 +81,14 @@ if (locationInputValue === "" && guestInputValue === "" && dateInputValue === ""
   resultsDiv.style.color = "red";
   resultsDiv.style.fontWeight = "bold";
 } else {
+
   const filteredResults = destinationData.filter((result) => {
-    const locationMatch = locationInputValue === "" ||
-      result.location.toLowerCase().includes(locationInputValue.toLowerCase());
 
-    const guestMatch = guestInputValue === "" ||
-      Number(guestInputValue) <= result.guest;
+  const locationMatch = result.location.toLowerCase().includes(locationInputValue.toLowerCase());
 
-    const dateMatch = dateInputValue === "" ||
-      result.date === dateInputValue;
+  const guestMatch = Number(guestInputValue) <= result.guest;
+
+  const dateMatch = result.date === dateInputValue;
 
     return locationMatch && guestMatch && dateMatch;
   });
@@ -111,6 +110,7 @@ if (locationInputValue === "" && guestInputValue === "" && dateInputValue === ""
     resultsDiv.style.fontWeight = "bold";
   }
 }
+locationSearch.reset()
 })
 
 

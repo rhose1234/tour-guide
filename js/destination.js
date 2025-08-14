@@ -49,7 +49,8 @@ const activitiesInfo = [
         price : "$35.00",
          review : "(584 reviews)",
         person : "per person",
-        date: "2025-08-07"
+        from: "2025-08-01",
+        to: "2025-08-03"
         
     },
     {
@@ -66,13 +67,14 @@ const activitiesInfo = [
         price : "$35.00",
          review : "(584 reviews)",
         person : "per person",
-        date: "2025-08-08"
+       from: "2025-08-04",
+        to: "2025-08-05"
         
     },
     {
         tag : "WATER ACTIVITIES",
-        image : "./assets/images/activty3.png",
-        title : "Westminster to Greenwich Alaska",
+        image : "./assets/images/activity4.png",
+        title : "Westminster to Greenwich Carlifonia",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -83,7 +85,26 @@ const activitiesInfo = [
         price : "$35.00",
          review : "(584 reviews)",
         person : "per person",
-        date: "2025-08-09"
+       from: "2025-08-04",
+        to: "2025-08-05"
+        
+    },
+    {
+        tag : "RIVER ACTIVITIES",
+        image : "./assets/images/activty3.png",
+        title : "Westminster to Greenwich Tokyo",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-06",
+        to: "2025-08-08"
         
     },
     {
@@ -100,13 +121,14 @@ const activitiesInfo = [
         price : "$35.00",
          review : "(584 reviews)",
         person : "per person",
-        date: "2025-08-10"
+        from: "2025-08-09",
+        to: "2025-08-10"
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity5.png",
-        title : "Westminster to Greenwich River Paris",
+        title : "Westminster to Greenwich River Sidney",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -117,13 +139,15 @@ const activitiesInfo = [
         price : "$35.00",
          review : "(584 reviews)",
         person : "per person",
-        date: "2025-08-11"
+      
+        from: "2025-08-11",
+        to: "2025-08-13"
         
     },
     {
-        tag : "WATER ACTIVITIES",
+        tag : "RIVER ACTIVITIES",
         image : "./assets/images/activty6.png",
-        title : "Westminster to Greenwich Egypt",
+        title : "Westminster to Greenwich Alaska",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -134,13 +158,14 @@ const activitiesInfo = [
         price : "$35.00",
          review : "(584 reviews)",
         person : "per person",
-        date: "2025-08-12"
+        from: "2025-08-14",
+        to: "2025-08-16"
         
     },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity7.png",
-        title : "Westminster to Greenwich Germany",
+        title : "Westminster to Greenwich Sidney",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -151,11 +176,12 @@ const activitiesInfo = [
         price : "$35.00",
          review : "(584 reviews)",
         person : "per person",
-        date: "2025-08-13"
+       from: "2025-08-17",
+        to: "2025-08-19"
         
     },
     {
-        tag : "WATER ACTIVITIES",
+        tag : "RIVER ACTIVITIES",
         image : "./assets/images/activity8.png",
         title : "Westminster to Greenwich Nigeria",
         feature1 : "Duration 2 hours",
@@ -168,8 +194,8 @@ const activitiesInfo = [
         price : "$35.00",
          review : "(584 reviews)",
         person : "per person",
-        date: "2025-08-14"
-
+        from: "2025-08-20",
+        to: "2025-08-22"
         
     },
     {
@@ -186,125 +212,303 @@ const activitiesInfo = [
         price : "$35.00",
         review : "(584 reviews)",
         person : "per person",
-         date: "2025-08-15"
+        from: "2025-08-23",
+        to: "2025-08-25"
+        
+    },
+     {
+        tag : "FOOD ACTIVITIES",
+        image : "./assets/images/activity9.png",
+        title : "Westminster to Greenwich River New York",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-23",
+        to: "2025-08-25"
+        
+    },
+    {
+        tag : "WATER ACTIVITIES",
+        image : "./assets/images/activity9.png",
+        title : "Westminster to Greenwich River Dubia",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-23",
+        to: "2025-08-25"
+        
+    },
+    {
+        tag : "FOOD ACTIVITIES",
+        image : "./assets/images/activity9.png",
+        title : "Westminster to Greenwich River London",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-23",
+        to: "2025-08-25"
+        
+    },
+     {
+        tag : "WATER ACTIVITIES",
+        image : "./assets/images/activity9.png",
+        title : "Westminster to Greenwich River Dubia",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-23",
+        to: "2025-08-25"
+        
+    },
+
+     {
+        tag : "FOOD ACTIVITIES",
+        image : "./assets/images/activity9.png",
+        title : "Westminster to Greenwich River Califonia",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-23",
+        to: "2025-08-25"
+        
+    },
+     {
+        tag : "WATER ACTIVITIES",
+        image : "./assets/images/activity9.png",
+        title : "Westminster to Greenwich River Dubia",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-23",
+        to: "2025-08-25"
+        
+    },
+     {
+        tag : "FOOD ACTIVITIES",
+        image : "./assets/images/activity9.png",
+        title : "Westminster to Greenwich River Alaska",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-23",
+        to: "2025-08-25"
         
     }
 ]
-const destinationContainer = document.querySelector("#destinationContainer")
 
-activitiesInfo.map((item) => {
 
-const destinationCard = document.createElement("div")
-destinationCard.classList.add("destinationCard")
+const availabilityForm = document.querySelector("#availabilityForm")
+const fromDateInput = document.querySelector("#fromDateInput")
+const toDateInput = document.querySelector("#toDateInput")
+const destinationResults = document.querySelector("#destinationResults")
+destinationResults.style.color = "black"
+destinationResults.textContent = "17 activities found"
 
-destinationCard.addEventListener("click", () => {
-    window.location.href = "tour.html"
+availabilityForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  const fromDateInputValue = fromDateInput.value.trim()
+  const toDateInputValue = toDateInput.value.trim()
+
+
+  if(fromDateInputValue === "" && toDateInputValue === "" ){
+
+    destinationResults.textContent = "You haven't searched anything"
+    destinationResults.style.color = "Red"
+
+    setTimeout(()=> {
+      destinationResults.textContent = "17 activities found"
+    }, 2000)
+  }
+
+  const searchFiltered = activitiesInfo.filter((destinate) => {
+      const fromDateInputMatch = fromDateInputValue === destinate.from
+      const toDateInputMatch = toDateInputValue === destinate.to
+
+      return fromDateInputMatch && toDateInputMatch
+  })
+
+  if(searchFiltered.length > 0 ){
+destinationResults.textContent = `${searchFiltered.length} activities found`;
+destinationResults.style.color = "green";
+displayCards(searchFiltered);
+destinationResults.innerHTML = searchFiltered.map((item) => {
+  
+})
+     
+  }
 })
 
-const destinationItem = document.createElement("div")
-destinationItem.classList.add("destinationItem")
-
-const destinationImageContainer = document.createElement("div")
-const destinationImage = document.createElement("img")
-destinationImage.classList.add("destinationImage")
-destinationImage.src = item.image
-
-const destinationDetailsContainer = document.createElement("div")
-destinationDetailsContainer.classList.add("destinationDetailsContainer")
-
-const destinationActivity = document.createElement("div")
-destinationActivity.classList.add("destinationActivity")
-
-const destinationActivityText = document.createElement("p")
-destinationActivityText.textContent =item.tag
-
-const ratingContainer = document.createElement("div")
-ratingContainer.classList.add("ratingContainer")
-
-for(let i = 0; i < 5; i++){
-const destinationActivityRating = document.createElement("i")
-destinationActivityRating.className = item.star
-
-ratingContainer.appendChild(destinationActivityRating)
-destinationActivity.append(destinationActivityText, ratingContainer)
 
 
+
+
+const destinationContainer = document.querySelector("#destinationContainer");
+
+let sixCardsToShow = 6; 
+
+function displayCards() {
+
+
+  activitiesInfo.map((item, number) => {
+    if (number < sixCardsToShow) {
+      const destinationCard = document.createElement("div");
+      destinationCard.classList.add("destinationCard");
+
+      destinationCard.addEventListener("click", () => {
+        window.location.href = "tour.html";
+      });
+
+      const destinationItem = document.createElement("div");
+      destinationItem.classList.add("destinationItem");
+
+      const destinationImageContainer = document.createElement("div");
+      const destinationImage = document.createElement("img");
+      destinationImage.classList.add("destinationImage");
+      destinationImage.src = item.image;
+
+      const destinationDetailsContainer = document.createElement("div");
+      destinationDetailsContainer.classList.add("destinationDetailsContainer");
+
+      const destinationActivity = document.createElement("div");
+      destinationActivity.classList.add("destinationActivity");
+
+      const destinationActivityText = document.createElement("p");
+      destinationActivityText.textContent = item.tag;
+
+      const ratingContainer = document.createElement("div");
+      ratingContainer.classList.add("ratingContainer");
+
+      for (let i = 0; i < 5; i++) {
+        const destinationActivityRating = document.createElement("i");
+        destinationActivityRating.className = item.star;
+        ratingContainer.appendChild(destinationActivityRating);
+      }
+
+      destinationActivity.append(destinationActivityText, ratingContainer);
+
+      const destinationTitle = document.createElement("h1");
+      destinationTitle.textContent = item.title;
+      destinationTitle.classList.add("destinationTitle");
+
+      const activityFeatures = document.createElement("div");
+      activityFeatures.classList.add("activityFeatures");
+
+      const featureData = [
+        { icon: item.icon1, text: item.feature1 },
+        { icon: item.icon2, text: item.feature2 },
+        { icon: item.icon3, text: item.feature3 },
+      ];
+
+      featureData.map((feature) => {
+        const featureDiv = document.createElement("div");
+        featureDiv.classList.add("activityFeature");
+
+        const featureIcon = document.createElement("i");
+        featureIcon.className = feature.icon;
+
+        const featureText = document.createElement("p");
+        featureText.textContent = feature.text;
+
+        featureDiv.append(featureIcon, featureText);
+        activityFeatures.appendChild(featureDiv);
+      });
+
+      const priceDiv = document.createElement("div");
+      priceDiv.classList.add("priceDiv");
+
+      const reviewTag = document.createElement("p");
+      reviewTag.classList.add("reviewTag");
+      reviewTag.textContent = item.review;
+
+      const activityPrice = document.createElement("h4");
+      activityPrice.textContent = item.price;
+      activityPrice.classList.add("activityPrice");
+
+      priceDiv.append(activityPrice, reviewTag);
+      destinationItem.append(destinationImageContainer, destinationDetailsContainer, priceDiv);
+      destinationImageContainer.appendChild(destinationImage);
+
+      destinationDetailsContainer.append(destinationActivity, destinationTitle, activityFeatures);
+      destinationCard.appendChild(destinationItem);
+
+      destinationContainer.appendChild(destinationCard);
+    }
+  });
+
+  // Load More Cards Btn
+  if (sixCardsToShow < activitiesInfo.length) {
+
+    const LoadMoreBtn = document.createElement("button");
+    LoadMoreBtn.textContent = "Load More";
+    LoadMoreBtn.classList.add("loadMoreBtn");
+    destinationContainer.appendChild(LoadMoreBtn);
+
+    LoadMoreBtn.addEventListener("click", () => {
+      sixCardsToShow += 7;
+      LoadMoreBtn.style.display = "none"
+      displayCards();
+    });
+  }
 }
 
-const activityReview = document.createElement("p")
-activityReview.textContent = item.review
-
-
-const destinationTitle = document.createElement("h1")
-destinationTitle.textContent =item.title
-destinationTitle.classList.add("destinationTitle")
-
-
-const activityFeatures = document.createElement("div")
-activityFeatures.classList.add("activityFeatures")
-
-const activityFeature1 = document.createElement("div")
-activityFeature1.classList.add("activityFeature")
-
-const activityFeatureText1 = document.createElement("p")
-activityFeatureText1.textContent = item.feature1
-
-const activityFeatureIcon1 = document.createElement("i")
-activityFeatureIcon1.className =item.icon1
-
-const activityFeature2 = document.createElement("div")
-activityFeature2.classList.add("activityFeature")
-
-const activityFeatureText2 = document.createElement("p")
-activityFeatureText2.textContent = item.feature2
-
-const activityFeatureIcon2 = document.createElement("i")
-activityFeatureIcon2.className =item.icon2
-
-const activityFeature3 = document.createElement("div")
-activityFeature3.classList.add("activityFeature")
-
-const activityFeatureText3 = document.createElement("p")
-activityFeatureText3.textContent = item.feature3
-
-const activityFeatureIcon3 = document.createElement("i")
-activityFeatureIcon3.className =item.icon3
-
-const priceDiv = document.createElement("div")
-priceDiv.classList.add("priceDiv")
-
-const reviewTag = document.createElement("p")
-reviewTag.classList.add("reviewTag")
-reviewTag.textContent = item.review
-
-const activityPrice = document.createElement("h4")
-activityPrice.textContent = item.price
-activityPrice.classList.add("activityPrice")
-
-
-destinationContainer.appendChild(destinationCard)
-destinationCard.appendChild(destinationItem)
-priceDiv.append(activityPrice, reviewTag)
-destinationItem.append(destinationImageContainer, destinationDetailsContainer, priceDiv)
-destinationImageContainer.appendChild(destinationImage)
-
-
-activityFeature1.append(activityFeatureIcon1, activityFeatureText1)
-activityFeature2.append(activityFeatureIcon2, activityFeatureText2)
-activityFeature3.append(activityFeatureIcon3, activityFeatureText3)
-
-activityFeatures.append(activityFeature1, activityFeature2, activityFeature3)
+displayCards();
 
 
 
-destinationDetailsContainer.append(destinationActivity, destinationTitle, activityFeatures)
-})
 
-// const LoadMoreBtn = document.createElement("button")
-// LoadMoreBtn.textContent = "Load More"
-// LoadMoreBtn.classList.add("loadMoreBtn")
 
-// destinationContainer.appendChild(LoadMoreBtn)
+
+
 
 
 // food activities cards and section
@@ -321,12 +525,31 @@ const waterActivitiesDetails = [
         star : "fa-solid fa-star",
         price : "$35.00",
         review : "584 reviews",
-        person : "per person"
+        person : "per person",
+        from: "2025-08-07",
+        to: "2025-08-09"
+
+    },
+    {
+        image: "./assets/images/water1.png",
+        activityTitle : "Tokyo: Westminster to Greenwich River Thames",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "584 reviews",
+        person : "per person",
+        from: "2025-08-01",
+        to: "2025-08-03"
 
     },
      {
         image: "./assets/images/water2.png",
-        activityTitle : "Alaska: Vintage Double Decker Bus Tour & Thames ",
+        activityTitle : "Carlifonia: Vintage Double Decker Bus Tour & Thames ",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -336,12 +559,31 @@ const waterActivitiesDetails = [
         star : "fa-solid fa-star",
         price : "$35.00",
         review : "584 reviews",
-        person : "per person"
+        person : "per person",
+        from: "2025-08-04",
+        to: "2025-08-06"
+
+    },
+    {
+        image: "./assets/images/water1.png",
+        activityTitle : "Sidney: Westminster to Greenwich River Thames",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "584 reviews",
+        person : "per person",
+        from: "2025-08-07",
+        to: "2025-08-09"
 
     },
      {
         image: "./assets/images/water3.png",
-        activityTitle : "Alaska: Magic of London Tour with Afternoon Tea at ",
+        activityTitle : "Alaska: Magic of Dehli Tour with Afternoon Tea at ",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -351,12 +593,14 @@ const waterActivitiesDetails = [
         star : "fa-solid fa-star",
         price : "$35.00",
         review : "584 reviews",
-        person : "per person"
+        person : "per person",
+        from: "2025-08-13",
+        to: "2025-08-15"
 
     },
      {
         image: "./assets/images/water4.png",
-        activityTitle : "Alaska: Magic of London Tour with Afternoon Tea at ",
+        activityTitle : "Carlifonia: Magic of Round Tour with Afternoon Tea ",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -366,7 +610,9 @@ const waterActivitiesDetails = [
         star : "fa-solid fa-star",
         price : "$35.00",
         review : "584 reviews",
-        person : "per person"
+        person : "per person",
+        from: "2025-08-15",
+        to: "2025-08-17"
 
     },
     {
@@ -381,12 +627,14 @@ const waterActivitiesDetails = [
         star : "fa-solid fa-star",
         price : "$35.00",
         review : "584 reviews",
-        person : "per person"
+        person : "per person",
+        from: "2025-08-18",
+        to: "2025-08-20"
 
     },
     {
         image: "./assets/images/water4.png",
-        activityTitle : "Alaska: Magic of London Tour with Afternoon Tea at ",
+        activityTitle : "Dehli: Magic of Dehli Tour with Afternoon Tea at ",
         feature1 : "Duration 2 hours",
         feature2 : "Transport Facility",
         feature3 : "Family Plan",
@@ -396,13 +644,67 @@ const waterActivitiesDetails = [
         star : "fa-solid fa-star",
         price : "$35.00",
         review : "584 reviews",
-        person : "per person"
+        person : "per person",
+        from: "2025-08-19",
+        to: "2025-08-21"
+
+    },
+     {
+        image: "./assets/images/water4.png",
+        activityTitle : "New York: Magic of Roundabout Tour with Afternoon Tea ",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "584 reviews",
+        person : "per person",
+        from: "2025-08-22",
+        to: "2025-08-24"
+
+    },
+    {
+        image: "./assets/images/water4.png",
+        activityTitle : "London: Magic of Vintage Tour with Afternoon Tea ",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "584 reviews",
+        person : "per person",
+        from: "2025-08-25",
+        to: "2025-08-27"
+
+    },
+     {
+        image: "./assets/images/water4.png",
+        activityTitle : "London: Magic of Vintage Tour with Afternoon Tea ",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "584 reviews",
+        person : "per person",
+        from: "2025-08-28",
+        to: "2025-08-30"
 
     }
 ]
 
 
-const availabilityForm = document.querySelector("availabilityForm")
+
+
 
 const specialContainerCards = document.querySelector("#specialContainerCards")
 

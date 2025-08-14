@@ -63,7 +63,7 @@
 <div class="destination-location">
     <div class="">
         <h2>Things to do in London</h2>
-        <i>49 activities found</i>
+       <i id="destinationResults"></i>
     </div>
 
     <div class="sort">
@@ -75,6 +75,8 @@
         </select>
     </div>
 </div>
+
+
 
 <div class="innerLocation">
 
@@ -118,27 +120,9 @@
             <label for="Adrenaline">Special Foods</label>
             </div>
 
-            <div class="">
-            <input type="checkbox">
-            <label for="Nature">Nature</label>
-            </div>
+            
 
-            <div class="">
-            <input type="checkbox">
-            <label for="Multi-day">Hidden gems</label>
-            </div>
-
-            <div class="">
-            <input type="checkbox">
-            <label for="Street art & grafitti">Street art & grafitti</label>
-            </div>
-
-            <div class="">
-            <input type="checkbox">
-            <label for="Food">Food</label>
-            </div>
-
-            <a href="">Show more destinations</a>
+            <!-- <a href="">Show more destinations</a> -->
 
         </div>
     </div>
@@ -187,40 +171,35 @@
 
             <div class="">
             <input type="checkbox">
-            <label for="Biscayne Bay">Biscayne Bay</label>
+            <label for="Biscayne Bay">New York</label>
             </div>
          
             <div class="">
             <input type="checkbox">
-            <label for="Downtown Miami">Downtown Miami</label>
+            <label for="Downtown Miami">Carlifonia</label>
             </div>
 
             <div class="">
             <input type="checkbox">
-            <label for="Wynwood Arts District">Wynwood Arts District</label>
+            <label for="Wynwood Arts District">Alaska</label>
             </div>
 
             <div class="">
             <input type="checkbox">
-            <label for="Port of Miami">Port of Miami</label>
+            <label for="Port of Miami">Sidney</label>
             </div>
 
             <div class="">
             <input type="checkbox">
-            <label for="Everglades National Park">Everglades National Park</label>
+            <label for="Everglades National Park">Dubia</label>
             </div>
 
             <div class="">
             <input type="checkbox">
-            <label for="Fisher Island">Fisher Island</label>
+            <label for="Fisher Island">London</label>
             </div>
 
-            <div class="">
-            <input type="checkbox">
-            <label for="Coconut Grove">Coconut Grove</label>
-            </div>
-
-            <a href="">Show more destinations</a>
+            <!-- <a href="">Show more destinations</a> -->
         </div>
     </div>
 
@@ -228,6 +207,7 @@
     </div>
 
     <div id="destinationContainer">
+        
     </div>
 </div>
 
@@ -431,7 +411,7 @@
                       
                         <input id="submitSignin" class="signinSubmit" type="submit" value="Sign in">
 
-                        <button class="google-signin">
+                        <!-- <button class="google-signin">
                             <img src="./assets/images/google.png" alt="google">
                             <p>Sign in with google</p>
                         </button>
@@ -439,7 +419,7 @@
                         <button class="facebook-signin">
                             <img src="./assets/images/facebook.png" alt="facebook">
                             <p>Sign in with facebook</p>
-                        </button>
+                        </button> -->
 
                         <div class="redirect-login">
                             <p>Don't have an account?</p>
@@ -468,7 +448,7 @@
                         <input id="submit" class="signupSubmit" type="submit" value="Sign Up">
                                <p id="error-signup"></p>
 
-                        <button class="google-signup">
+                        <!-- <button class="google-signup">
                             <img src="./assets/images/google.png" alt="google">
                             <p>Sign up with google</p>
                         </button>
@@ -476,7 +456,7 @@
                         <button class="facebook-signup">
                             <img src="./assets/images/facebook.png" alt="facebook">
                             <p>Sign up with facebook</p>
-                        </button>
+                        </button> -->
 
                         <div class="redirect-signup">
                             <p>Already have an account?</p>
@@ -491,8 +471,15 @@
 
     <script src="./js/destination.js"></script>
 
-     <script>
-  AOS.init();
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+  AOS.init({
+
+      once: true,
+    duration: 800
+  });
+
 </script>
 </body>
 </html>
