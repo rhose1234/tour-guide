@@ -53,6 +53,60 @@ const activitiesInfo = [
         to: "2025-08-03"
         
     },
+     {
+        tag : "FOOD ACTIVITIES",
+        image : "./assets/images/activty1.png",
+        title : "Westminster to Greenwich Paris",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-01",
+        to: "2025-08-03"
+        
+    },
+     {
+        tag : "RIVER ACTIVITIES",
+        image : "./assets/images/activty1.png",
+        title : "Westminster to Greenwich Alaska",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-01",
+        to: "2025-08-03"
+        
+    },
+     {
+        tag : "WATER ACTIVITIES",
+        image : "./assets/images/activty1.png",
+        title : "Westminster to Greenwich Tokyo",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-01",
+        to: "2025-08-03"
+        
+    },
     {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity4.png",
@@ -163,6 +217,24 @@ const activitiesInfo = [
         
     },
     {
+        tag : "RIVER ACTIVITIES",
+        image : "./assets/images/activty6.png",
+        title : "Westminster to Greenwich Alaska",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-14",
+        to: "2025-08-16"
+        
+    },
+    {
         tag : "WATER ACTIVITIES",
         image : "./assets/images/activity7.png",
         title : "Westminster to Greenwich Sidney",
@@ -182,6 +254,42 @@ const activitiesInfo = [
     },
     {
         tag : "RIVER ACTIVITIES",
+        image : "./assets/images/activity7.png",
+        title : "Westminster to Greenwich Sidney",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+       from: "2025-08-17",
+        to: "2025-08-19"
+        
+    },
+    {
+        tag : "RIVER ACTIVITIES",
+        image : "./assets/images/activity8.png",
+        title : "Westminster to Greenwich Nigeria",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-20",
+        to: "2025-08-22"
+        
+    },
+    {
+        tag : "WATER ACTIVITIES",
         image : "./assets/images/activity8.png",
         title : "Westminster to Greenwich Nigeria",
         feature1 : "Duration 2 hours",
@@ -342,64 +450,38 @@ const activitiesInfo = [
         from: "2025-08-23",
         to: "2025-08-25"
         
+    },
+    {
+        tag : "WATER ACTIVITIES",
+        image : "./assets/images/activity9.png",
+        title : "Westminster to Greenwich River Alaska",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+        review : "(584 reviews)",
+        person : "per person",
+        from: "2025-08-23",
+        to: "2025-08-25"
+        
     }
 ]
 
 
-const availabilityForm = document.querySelector("#availabilityForm")
-const fromDateInput = document.querySelector("#fromDateInput")
-const toDateInput = document.querySelector("#toDateInput")
-const destinationResults = document.querySelector("#destinationResults")
-destinationResults.style.color = "black"
-destinationResults.textContent = "17 activities found"
-
-availabilityForm.addEventListener("submit", (e) => {
-  e.preventDefault()
-
-  const fromDateInputValue = fromDateInput.value.trim()
-  const toDateInputValue = toDateInput.value.trim()
-
-
-  if(fromDateInputValue === "" && toDateInputValue === "" ){
-
-    destinationResults.textContent = "You haven't searched anything"
-    destinationResults.style.color = "Red"
-
-    setTimeout(()=> {
-      destinationResults.textContent = "17 activities found"
-    }, 2000)
-  }
-
-  const searchFiltered = activitiesInfo.filter((destinate) => {
-      const fromDateInputMatch = fromDateInputValue === destinate.from
-      const toDateInputMatch = toDateInputValue === destinate.to
-
-      return fromDateInputMatch && toDateInputMatch
-  })
-
-  if(searchFiltered.length > 0 ){
-destinationResults.textContent = `${searchFiltered.length} activities found`;
-destinationResults.style.color = "green";
-displayCards(searchFiltered);
-destinationResults.innerHTML = searchFiltered.map((item) => {
-  
-})
-     
-  }
-})
-
-
-
-
-
 const destinationContainer = document.querySelector("#destinationContainer");
-
+destinationContainer.innerHTML = "";
 let sixCardsToShow = 6; 
 
-function displayCards() {
 
 
-  activitiesInfo.map((item, number) => {
+function displayCards(list = activitiesInfo) {
+  destinationContainer.innerHTML = ""; 
+
+  list.map((item, number) => {
     if (number < sixCardsToShow) {
       const destinationCard = document.createElement("div");
       destinationCard.classList.add("destinationCard");
@@ -502,6 +584,105 @@ function displayCards() {
 }
 
 displayCards();
+
+//availabilty filter with date functionality
+
+const availabilityForm = document.querySelector("#availabilityForm")
+const fromDateInput = document.querySelector("#fromDateInput")
+const toDateInput = document.querySelector("#toDateInput")
+const destinationResults = document.querySelector("#destinationResults")
+destinationResults.style.color = "black"
+destinationResults.textContent = "24 activities found"
+
+availabilityForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  const fromDateInputValue = fromDateInput.value.trim()
+  const toDateInputValue = toDateInput.value.trim()
+
+
+  if(fromDateInputValue === "" && toDateInputValue === "" ){
+
+    destinationResults.textContent = "You haven't searched anything"
+    destinationResults.style.color = "Red"
+
+    setTimeout(()=> {
+      destinationResults.textContent = "17 activities found"
+    }, 2000)
+  }
+
+  const searchFiltered = activitiesInfo.filter((destinate) => {
+      const fromDateInputMatch = fromDateInputValue === destinate.from
+      const toDateInputMatch = toDateInputValue === destinate.to
+
+      return fromDateInputMatch && toDateInputMatch
+  })
+
+  if(searchFiltered.length > 0 ){
+
+destinationResults.textContent = `${searchFiltered.length} activities found`;
+destinationResults.style.color = "green";
+displayCards(searchFiltered);
+}else{
+  destinationResults.textContent = "No activities found for the selected dates.";
+    destinationResults.style.color = "red";
+    
+}
+})
+
+
+//theme filter functionality
+const waterTheme = document.querySelector("#waterTheme")
+const riverTheme = document.querySelector("#riverTheme")
+const foodTheme = document.querySelector("#foodTheme")
+
+function filterActivities() {
+
+const waterThemechecked = waterTheme.checked
+const riverThemechecked = riverTheme.checked
+const foodThemechecked = foodTheme.checked
+
+
+if (!waterThemechecked && !riverThemechecked && !foodThemechecked) {
+    destinationResults.textContent = `${activitiesInfo.length} activities found`;
+    destinationResults.style.color = "green";
+    displayCards(activitiesInfo)
+    
+    return;
+  }
+
+  const filteredCheck = activitiesInfo.filter((activity) => {
+  const tag = activity.tag.toLowerCase()
+  const waterMatch = waterThemechecked && tag.includes("water")
+  const riverMatch = riverThemechecked && tag.includes("river")
+  const foodMatch =  foodThemechecked && tag.includes("food")
+
+  return waterMatch || riverMatch || foodMatch
+})
+
+if(filteredCheck.length > 0){
+ destinationResults.textContent = `${filteredCheck.length} activities found`
+ destinationResults.style.color = "green"
+ displayCards(filteredCheck)
+}
+else{
+  destinationResults.textContent = "No activities found"
+  destinationResults.style.color = "red"
+  displayCards([])
+}
+
+}
+
+
+waterTheme.addEventListener("change", () => {filterActivities()});
+riverTheme.addEventListener("change", () => {filterActivities()});
+foodTheme.addEventListener("change", () => {filterActivities()});
+
+filterActivities()
+
+
+//location filter functionality
+
 
 
 
