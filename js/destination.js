@@ -199,6 +199,25 @@ const activitiesInfo = [
         
     },
     {
+        tag : "WATER ACTIVITIES",
+        image : "./assets/images/activity5.png",
+        title : "Westminster to Greenwich River New York",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+      
+        from: "2025-08-11",
+        to: "2025-08-13"
+        
+    },
+    {
         tag : "RIVER ACTIVITIES",
         image : "./assets/images/activty6.png",
         title : "Westminster to Greenwich Alaska",
@@ -232,6 +251,25 @@ const activitiesInfo = [
         person : "per person",
         from: "2025-08-14",
         to: "2025-08-16"
+        
+    },
+    {
+        tag : "RIVER ACTIVITIES",
+        image : "./assets/images/activity5.png",
+        title : "Westminster to Greenwich River New York",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+      
+        from: "2025-08-11",
+        to: "2025-08-13"
         
     },
     {
@@ -250,6 +288,25 @@ const activitiesInfo = [
         person : "per person",
        from: "2025-08-17",
         to: "2025-08-19"
+        
+    },
+    {
+        tag : "FOOD ACTIVITIES",
+        image : "./assets/images/activity5.png",
+        title : "Westminster to Greenwich New York",
+        feature1 : "Duration 2 hours",
+        feature2 : "Transport Facility",
+        feature3 : "Family Plan",
+        icon1 : "fa-solid fa-clock",
+        icon2 : "fa-solid fa-car-side",
+        icon3 : "fa-solid fa-user-group",
+        star : "fa-solid fa-star",
+        price : "$35.00",
+         review : "(584 reviews)",
+        person : "per person",
+      
+        from: "2025-08-11",
+        to: "2025-08-13"
         
     },
     {
@@ -683,6 +740,80 @@ filterActivities()
 
 //location filter functionality
 
+const newYork = document.querySelector("#newYork")
+const carlifonia = document.querySelector("#carlifonia")
+const alaska = document.querySelector("#alaska")
+const sidney = document.querySelector("#sidney")
+const dubia = document.querySelector("#dubia")
+const london = document.querySelector("#london")
+const nigeria = document.querySelector("#nigeria")
+
+function destinationFilter() {
+
+  const newYorkChecked = newYork.checked
+  const carlifoniaChecked = carlifonia.checked
+  const alaskaChecked = alaska.checked
+  const sidneyChecked = sidney.checked
+  const dubiaChecked  = dubia.checked
+  const londonChecked = london.checked 
+  const nigeriaChecked = nigeria.checked
+
+
+  if(!newYorkChecked && !carlifoniaChecked && !alaskaChecked && !sidneyChecked && !dubiaChecked && !londonChecked && !nigeriaChecked ){
+    displayCards(activitiesInfo)
+    destinationResults.textContent = `${activitiesInfo.length} activities found`
+    destinationResults.style.color = "green";
+
+    return;
+
+  }
+
+
+
+  const filteredDestination = activitiesInfo.filter((item) => {
+
+  const destination = item.title.toLowerCase()
+
+    const newYorkMatch = newYorkChecked && destination.includes("new york") 
+    const carlifoniaMatch = carlifoniaChecked && destination.includes("carlifonia")
+    const alaskaMatch = alaskaChecked && destination.includes("alaska")
+    const sidneyMatch = sidneyChecked && destination.includes("sidney")
+    const dubiaMatch = dubiaChecked && destination.includes("dubia")
+    const londonMatch = londonChecked && destination.includes("london")
+    const nigeriaMatch = nigeriaChecked && destination.includes("nigeria")
+
+
+    return newYorkMatch || carlifoniaMatch || alaskaMatch || sidneyMatch || dubiaMatch || londonMatch || nigeriaMatch
+   
+  })
+
+  if(filteredDestination.length > 0){
+    displayCards(filteredDestination)
+    destinationResults.textContent = `${filteredDestination.length} activities found!`
+    destinationResults.style.color = "green"
+  }
+  else {
+    displayCards([])
+    destinationResults.textContent = "No activities found"
+    destinationResults.style.color = "red"
+    LoadMoreBtn.style.display = "none"
+  }
+
+}
+
+newYork.addEventListener("change", () => {destinationFilter()})
+carlifonia.addEventListener("change", () => {destinationFilter()})
+alaska.addEventListener("change", () => {destinationFilter()})
+sidney.addEventListener("change", () => {destinationFilter()})
+dubia.addEventListener("change", () => {destinationFilter()})
+london.addEventListener("change", () => {destinationFilter()})
+nigeria.addEventListener("change", () => {destinationFilter()})
+
+destinationFilter()
+
+
+
+
 
 
 
@@ -894,6 +1025,9 @@ waterActivitiesDetails.map((waterActivity) => {
 
 const waterActivitiesCard = document.createElement("div")
 waterActivitiesCard.classList.add("waterActivitiesCard")
+waterActivitiesCard.addEventListener("click", () => {
+  window.location.href = "destination.html"
+})
 
 
 const waterActivityImage = document.createElement("img")
@@ -1094,6 +1228,9 @@ foodsActivitiesDetails.map((foodsActivity) => {
 
 const foodsActivitiesCard = document.createElement("div")
 foodsActivitiesCard.classList.add("foodsActivitiesCard")
+foodsActivitiesCard.addEventListener("click", () => {
+  window.location.href = "destination.html"
+})
 
 
 const foodsActivityImage = document.createElement("img")
@@ -1292,6 +1429,10 @@ riverActivitiesDetails.map((riverActivity) => {
 
 const riverActivitiesCard = document.createElement("div")
 riverActivitiesCard.classList.add("riverActivitiesCard")
+
+riverActivitiesCard.addEventListener("click", () => {
+  window.location.href = "destination.html"
+})
 
 
 const riverActivityImage = document.createElement("img")
