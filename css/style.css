@@ -1303,7 +1303,7 @@ footer{
         position: fixed;
         top: 60px;
         left: 0%;
-        height: 50vh;
+        height: 100vh;
         width: 100%; 
         display: flex;
         flex-direction: column;
@@ -1350,7 +1350,7 @@ footer{
 /* hero section for mobile */
 .hero-content{
    position: absolute;
-  top: 29%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%); 
   text-align: center;
@@ -1375,23 +1375,24 @@ footer{
 }
 .box{
     position: absolute;
-    top: 55%;
-   
+    top: 50%;
     left: 10% ;
     background-color: #ffffff ;
-    padding: 30px 40px;
+    padding: 20px 40px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 10;
-   
     width: 80%;
     font-size: 15px;
 }
 .box .box-inner{
  display: flex;
     justify-content: space-between;
-        gap: 10px;
-         flex-direction: column;
+    gap: 5px;
+    flex-direction: column;
+}
+.box button{
+    padding: 10px 30px;
 }
 .second-section{
   

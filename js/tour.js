@@ -1,5 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // /signin and signup popups
+  
+
+//mobile navigation responsiveness
+const links = document.querySelectorAll(".mobilenav_Link")
+const mobileList = document.querySelector(".mobileList")
+const body = document.body
+
+const menu = document.querySelector("#hamburger")
+menu.addEventListener("click", () => { 
+    mobileList.classList.toggle("show")
+      body.classList.toggle('no-scroll');
+
+})
+
+links.forEach((item) => {
+        item.addEventListener("click", ()=> {
+            mobileList.classList.remove("show")
+        })
+        
+    })
+
+    //onscroll navbar color change
+window.onscroll = function () {
+  const navbar = document.querySelector(".desktop-nav");
+  const mobile = document.querySelector(".mobile-nav")
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("nav-scrolled");
+    mobile.classList.add("nav-scrolled")
+  } else {
+    navbar.classList.remove("nav-scrolled");
+    mobile.classList.remove("nav-scrolled")
+  }
+};
 
 // signin and signup popup forms
 const signinButton = document.querySelector("#signin")
@@ -176,6 +209,59 @@ loginForm.addEventListener("submit", (e) => {
   }
 })
 
+//Booking form Validation
+
+const bookingForm = document.querySelector("#bookingForm")
+const bookingDateStart = document.querySelector("#bookingDateStart")
+const bookingDateEnd = document.querySelector("#bookingDateEnd")
+const bookingPersonQuanity = document.querySelector("#bookingPersonQuanity")
+const bookingErrorMsg = document.querySelector("#bookingErrorMsg")
+const subtotalPrice = document.querySelector("#subtotalPrice")
+ subtotalPrice.textContent = "$0.00"
+
+bookingErrorMsg.style.fontSize = "12px"
+bookingErrorMsg.textContent = ""
+
+bookingForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+  const bookingDateStartValue = bookingDateStart.value.trim()
+  const bookingDateEndValue = bookingDateEnd.value.trim()
+  const bookingPersonQuanityValue = bookingPersonQuanity.value.trim()
+
+  
+
+
+
+  if(bookingDateStartValue === "" || bookingDateEndValue === "" || bookingPersonQuanityValue === ""){
+    bookingErrorMsg.textContent = "All fields required! Select a date for your trip and number of guest"
+    bookingErrorMsg.style.margin = "10px"
+    bookingErrorMsg.style.color = "red"
+     subtotalPrice.textContent = "$0.00"
+
+     return
+   
+  }
+  else if(bookingDateStartValue === bookingDateEndValue){
+      bookingErrorMsg.textContent = "Start date cannot be the same as End date"
+      bookingErrorMsg.style.color = "red"
+     subtotalPrice.textContent = "$0.00"
+  }
+  else{
+
+const pricePerPerson = 30
+const totalPrice = pricePerPerson * Number(bookingPersonQuanityValue)
+subtotalPrice.textContent = `$${totalPrice.toFixed(2)}`
+bookingErrorMsg.textContent = "Booking confirmed! You'll get a mail from us...Now redirecting to your profile page"
+bookingErrorMsg.style.color = "green"
+
+setTimeout(() => {
+window.location.href = "profile.html"
+}, 2000)
+
+bookingForm.reset()
+
+}
+})
 
 
 

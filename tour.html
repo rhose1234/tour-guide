@@ -202,7 +202,7 @@
 <div class="destinationMap">
 <a href="https://maps.app.goo.gl/QKzWXSSZ2GTTqWrn7">Open In Google Maps</a>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16496083.161127403!2d-179.53046106454693!3d59.68821560734512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5400df9cc0aec01b%3A0xbcdb5e27a98adb35!2sAlaska%2C%20USA!5e0!3m2!1sen!2sng!4v1754978395635!5m2!1sen!2sng" width="600" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16496083.161127403!2d-179.53046106454693!3d59.68821560734512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5400df9cc0aec01b%3A0xbcdb5e27a98adb35!2sAlaska%2C%20USA!5e0!3m2!1sen!2sng!4v1754978395635!5m2!1sen!2sng"  height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
         </div>
    
@@ -212,31 +212,37 @@
         <div class="formHeading">
             <h1>Booking</h1>
         </div>
-        <form action="">
+        <form action="" id="bookingForm">
             <label>From</label>
-            <input type="date" name="fromDate" id="">
+            <input type="date" name="fromDate" id="bookingDateStart">
 
              <label>To</label>
-            <input type="date" name="toDate" id="">
+            <input type="date" name="toDate" id="bookingDateEnd">
 
             <label>No of Guests?</label>
-            <select>
-                <option value="1 Adults">1 Adults</option>
-                <option value="2 Adults">2 Adults</option>
-                <option value="3 Adults">3 Adults</option>
-                <option value="4 Adults">4 Adults</option>
-                <option value="5 Adults">5 Adults</option>
-                <option value="6 Adults">6 Adults</option>
+            <select id="bookingPersonQuanity">
+                  <option value="">Select Guest</option>
+                <option value="1">1 Adults</option>
+                <option value="2 ">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+                <option value="5">5 Adults</option>
+                <option value="6">6 Adults</option>
+                <option value="7">7 Adults</option>
+                <option value="8">8 Adults</option>
+                <option value="9">9 Adults</option>
+                <option value="10">10 Adults</option>
             </select>
 
             <div class="subtotal">
             <p>Subtotal</p>
-            <p id="subtotalPrice">$30</p>
+            <p id="subtotalPrice"></p>
             </div>
 
+            <p id="bookingErrorMsg"></p>
             <div class="checkoutBtns">
                 <button class="active">Confirm Booking</button>
-                <button>
+                <!-- <button>
                     <i class="fa-solid fa-heart"></i>                    
                     <p>Save To Wishlist</p>
                 </button>
@@ -244,7 +250,7 @@
                 <button>
                     <i class="fa-solid fa-share"></i>
                     <p>Share The Activity</p>
-                </button>
+                </button> -->
             </div>
         </form>
 
