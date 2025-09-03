@@ -664,7 +664,7 @@ availabilityForm.addEventListener("submit", (e) => {
     destinationResults.style.color = "Red"
 
     setTimeout(()=> {
-      destinationResults.textContent = "17 activities found"
+      destinationResults.textContent = "24 activities found"
     }, 2000)
   }
 
@@ -680,6 +680,7 @@ availabilityForm.addEventListener("submit", (e) => {
 destinationResults.textContent = `${searchFiltered.length} activities found`;
 destinationResults.style.color = "green";
 displayCards(searchFiltered);
+
 }else{
   destinationResults.textContent = "No activities found for the selected dates.";
     destinationResults.style.color = "red";

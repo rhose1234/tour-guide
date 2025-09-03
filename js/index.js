@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () =>  {
     {
         location : "Westminster to Greenwich London",
         date: "2025-08-07",
-         guest: 10
+        guest: 10
     },
     {
       
@@ -415,7 +415,6 @@ const posts = [
     author : "../assets/images/author.png",
     name : "Jackie Moncada"
 },
-
 {
     heading : "10 Proven Health Benefits of Cinnamon", 
     image: "../assets/images/blog4.png",

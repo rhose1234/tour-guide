@@ -47,6 +47,12 @@ nav.desktop-nav{
     text-decoration: none;
     color: #000000;
 
+
+}
+#link-wrapper li a.active{
+ 
+    color: #7BBCB0;
+
 }
 #signin-btn button{
     padding: 14px 30px;
