@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () =>  {
         
     },
     {
-       
+      
         location : "Westminster to Greenwich River Sidney",
         date: "2025-08-11",
         guest: 10
