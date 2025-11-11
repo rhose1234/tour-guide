@@ -381,7 +381,7 @@ button.facebook-signup img{
 }
 .hero-content{
    position: absolute;
-  top: 45%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%); 
   text-align: center;
@@ -432,7 +432,7 @@ button.facebook-signup img{
 }
 .box{
     position: absolute;
-    bottom: 3%;
+    bottom: 10%;
     left: 10% ;
     background-color: #ffffff ;
     padding: 30px 50px;
@@ -1073,7 +1073,7 @@ button.facebook-signup img{
     
 }
 .galleryPictures img{
-     width: 315px;
+     width: 280px;
     margin-top: 20px;
     transition: ease-in-out 0.5s;
     
